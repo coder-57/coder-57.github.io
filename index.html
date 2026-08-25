@@ -9,6 +9,21 @@
     rel="stylesheet"
 />
     <title>astrike-store</title>
+    <script>
+    const redirect = sessionStorage.getItem("redirect");
+
+    if (redirect) {
+        sessionStorage.removeItem("redirect");
+
+        if (redirect !== window.location.pathname) {
+            window.history.replaceState(
+                null,
+                "",
+                redirect
+            );
+        }
+    }
+</script>
   </head>
   <body>
     <div id="app"></div>

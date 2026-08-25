@@ -1,0 +1,153 @@
+.site-footer {
+    width: 100%;
+
+    background: #111;
+
+    color: #fff;
+
+    margin-top: 60px;
+}
+
+
+.footer-container {
+
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding: 55px 40px;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr 1fr 1fr;
+
+    gap: 40px;
+
+    box-sizing: border-box;
+}
+
+
+.footer-column h3 {
+
+    margin: 0 0 15px;
+
+    font-size: 25px;
+
+    letter-spacing: 2px;
+}
+
+
+.footer-column h4 {
+
+    margin: 0 0 18px;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+.footer-column p {
+
+    margin: 0;
+
+    max-width: 300px;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.footer-column a {
+
+    display: block;
+
+    width: fit-content;
+
+    margin-bottom: 10px;
+
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.2s;
+}
+
+
+.footer-column a:hover {
+
+    color: #fff;
+}
+
+
+/* ========================================
+   FOOTER BOTTOM
+======================================== */
+
+.footer-bottom {
+
+    border-top: 1px solid #292929;
+
+    padding: 20px 40px;
+
+    text-align: center;
+}
+
+
+.footer-bottom p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 800px) {
+
+    .footer-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        padding: 45px 25px;
+
+        gap: 35px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 500px) {
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        padding: 40px 20px;
+
+        gap: 30px;
+    }
+
+
+    .footer-bottom {
+
+        padding: 18px 15px;
+    }
+
+}

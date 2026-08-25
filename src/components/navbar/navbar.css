@@ -1,0 +1,2158 @@
+/* =========================================================
+   ASTRIKE SPORTS
+   NAVBAR
+   FIXED / FROZEN
+   RESPONSIVE
+   BLACK THEME
+   MOBILE OVERLAP FIX
+   PROFILE IMAGE SUPPORT
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+.site-navbar,
+.site-navbar *,
+.site-navbar *::before,
+.site-navbar *::after {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root {
+    --navbar-height: 130px;
+
+    --nav-black: #000000;
+    --nav-border: #252525;
+
+    --nav-text: #ffffff;
+    --nav-muted: #999999;
+    --nav-hover: #d8d8d8;
+}
+
+
+/* =========================================================
+   HTML / BODY
+========================================================= */
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #ffffff;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   APP
+========================================================= */
+
+#app {
+    width: 100%;
+    min-height: 100vh;
+
+    padding-top: var(--navbar-height);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN NAVBAR
+========================================================= */
+
+.site-navbar {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: var(--navbar-height);
+
+    margin: 0;
+    padding: 0;
+
+    background: var(--nav-black);
+    color: var(--nav-text);
+
+    z-index: 99999;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   TOP SHIPPING BAR
+========================================================= */
+
+.top-shipping {
+    width: 100%;
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;
+
+    background: #000000;
+    color: #ffffff;
+
+    border-bottom: 1px solid #202020;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 0.4px;
+
+    line-height: 1;
+
+    text-align: center;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MAIN NAVBAR
+========================================================= */
+
+.main-navbar {
+    position: relative;
+
+    width: 100%;
+    height: 55px;
+
+    padding: 0 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #000000;
+
+    border-bottom: 1px solid var(--nav-border);
+
+    z-index: 100000;
+}
+
+
+/* =========================================================
+   LEFT SECTION
+========================================================= */
+
+.navbar-left {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    flex: 1 1 auto;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MOBILE MENU BUTTON
+========================================================= */
+
+.mobile-menu-btn {
+    display: none;
+
+    width: 32px;
+    min-width: 32px;
+    max-width: 32px;
+
+    height: 32px;
+
+    padding: 0;
+    margin: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-size: 21px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    flex: 0 0 32px;
+
+    z-index: 100002;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.mobile-menu-btn:hover {
+    opacity: 0.7;
+}
+
+.mobile-menu-btn:active {
+    transform: scale(0.9);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.astrike-logo {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    min-width: 0;
+
+    flex: 0 1 auto;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    transition: opacity 0.2s ease;
+}
+
+.astrike-logo:hover {
+    opacity: 0.75;
+}
+
+
+/* =========================================================
+   LOGO MARK
+========================================================= */
+
+.logo-mark {
+    display: inline-flex;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    line-height: 1;
+}
+
+
+/* =========================================================
+   DESKTOP NAVIGATION
+========================================================= */
+
+.desktop-nav-links {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    width: max-content;
+
+    z-index: 100001;
+}
+
+
+/* =========================================================
+   DESKTOP LINKS
+========================================================= */
+
+.desktop-nav-links a {
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 55px;
+
+    padding: 0;
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.8px;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.desktop-nav-links a:hover {
+    color: var(--nav-hover);
+}
+
+
+/* =========================================================
+   DESKTOP UNDERLINE
+========================================================= */
+
+.desktop-nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: 9px;
+
+    width: 0;
+    height: 1px;
+
+    background: #ffffff;
+
+    transform: translateX(-50%);
+
+    transition: width 0.2s ease;
+}
+
+.desktop-nav-links a:hover::after {
+    width: 100%;
+}
+
+.desktop-nav-links a.active::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   RIGHT SECTION
+========================================================= */
+
+.navbar-right {
+    min-width: max-content;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    margin-left: auto;
+
+    flex: 0 0 auto;
+
+    white-space: nowrap;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   COMMON NAVBAR ICON BUTTON
+========================================================= */
+
+.navbar-icon {
+    position: relative;
+
+    width: 34px;
+    min-width: 34px;
+    max-width: 34px;
+
+    height: 34px;
+
+    padding: 0;
+    margin: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    flex: 0 0 34px;
+
+    overflow: visible;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.navbar-icon:hover {
+    opacity: 0.7;
+}
+
+.navbar-icon:active {
+    transform: scale(0.92);
+}
+
+
+/* =========================================================
+   MATERIAL ICON
+========================================================= */
+
+.navbar-icon .material-symbols-outlined {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+
+    font-size: 19px;
+
+    line-height: 1;
+
+    flex: 0 0 20px;
+}
+
+
+/* =========================================================
+   ACCOUNT BUTTON
+========================================================= */
+
+.account-button {
+    width: auto;
+
+    min-width: 34px;
+
+    height: 34px;
+
+    padding: 0 5px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    flex: 0 0 auto;
+
+    white-space: nowrap;
+
+    background: transparent;
+
+    border: 0;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ACCOUNT AVATAR
+   IMPORTANT:
+   JS USES #accountAvatar
+   CLASS = account-avatar
+========================================================= */
+
+.account-avatar {
+    position: relative;
+
+    width: 24px;
+    min-width: 24px;
+    max-width: 24px;
+
+    height: 24px;
+    min-height: 24px;
+    max-height: 24px;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 24px;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    border: 1px solid #ffffff;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    line-height: 1;
+
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   PROFILE IMAGE
+   JS CLASS = navbar-profile-image
+========================================================= */
+
+.account-avatar .navbar-profile-image {
+    display: block;
+
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    object-fit: cover;
+
+    object-position: center center;
+
+    border: 0;
+    outline: 0;
+
+    border-radius: 50%;
+
+    background: #111111;
+
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   DEFAULT LOGIN PERSON ICON
+========================================================= */
+
+.account-avatar .material-symbols-outlined {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   ACCOUNT USER NAME
+========================================================= */
+
+.account-user-name {
+    display: inline-block;
+
+    max-width: 100px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    color: #ffffff;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 0.2px;
+
+    line-height: 1;
+
+    flex: 0 1 auto;
+}
+
+.account-button:hover .account-user-name {
+    color: var(--nav-hover);
+}
+
+
+/* =========================================================
+   ORDERS
+========================================================= */
+
+#ordersBtn {
+    width: 34px;
+    min-width: 34px;
+    max-width: 34px;
+
+    flex: 0 0 34px;
+}
+
+
+/* =========================================================
+   CART
+========================================================= */
+
+.cart-button {
+    position: relative;
+
+    width: 34px;
+    min-width: 34px;
+    max-width: 34px;
+
+    flex: 0 0 34px;
+
+    overflow: visible;
+}
+
+
+/* =========================================================
+   CART BADGE
+========================================================= */
+
+.cart-badge {
+    position: absolute;
+
+    top: 0;
+    right: -1px;
+
+    width: 15px;
+    height: 15px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff0000;
+
+    color: #ffffff;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    pointer-events: none;
+
+    z-index: 10;
+}
+
+
+/* =========================================================
+   EMPTY CART BADGE
+========================================================= */
+
+.cart-badge.empty {
+    display: none;
+}
+
+
+/* =========================================================
+   LOGOUT BUTTON
+========================================================= */
+
+.logout-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
+
+    height: 32px;
+
+    padding: 0 8px;
+
+    margin: 0;
+
+    border: 1px solid #444444;
+
+    border-radius: 2px;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    flex: 0 0 70px;
+
+    overflow: hidden;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+.logout-button:hover {
+    background: #ffffff;
+
+    border-color: #ffffff;
+
+    color: #000000;
+}
+
+.logout-button .material-symbols-outlined {
+    font-size: 16px;
+
+    flex: 0 0 auto;
+}
+
+.logout-text {
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   SEARCH ROW
+========================================================= */
+
+.navbar-search-row {
+    width: 100%;
+
+    height: 50px;
+
+    padding: 7px 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #000000;
+
+    border-bottom: 1px solid var(--nav-border);
+
+    z-index: 99998;
+}
+
+
+/* =========================================================
+   SEARCH BOX
+========================================================= */
+
+.navbar-search {
+    width: 500px;
+
+    max-width: 100%;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    background: #000000;
+
+    border: 1px solid #555555;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.navbar-search:focus-within {
+    border-color: #ffffff;
+
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   SEARCH INPUT
+========================================================= */
+
+.navbar-search input {
+    width: 100%;
+
+    min-width: 0;
+
+    height: 100%;
+
+    padding: 0 12px;
+
+    margin: 0;
+
+    border: 0;
+
+    outline: 0;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 12px;
+}
+
+.navbar-search input::placeholder {
+    color: #888888;
+}
+
+
+/* =========================================================
+   SEARCH BUTTON
+========================================================= */
+
+.navbar-search button {
+    width: 38px;
+    min-width: 38px;
+    max-width: 38px;
+
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    outline: 0;
+
+    background: #000000;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    flex: 0 0 38px;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.navbar-search button:hover {
+    opacity: 0.7;
+}
+
+.navbar-search button:active {
+    transform: scale(0.9);
+}
+
+.navbar-search button .material-symbols-outlined {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.mobile-menu {
+    position: absolute;
+
+    top: 80px;
+
+    left: 0;
+
+    width: 100%;
+
+    display: none;
+
+    padding: 20px;
+
+    background: #000000;
+
+    border-top: 1px solid #242424;
+
+    border-bottom: 1px solid #242424;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.45);
+
+    z-index: 100001;
+}
+
+.mobile-menu.active {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+
+/* =========================================================
+   MOBILE MENU LINKS
+========================================================= */
+
+.mobile-menu a {
+    position: relative;
+
+    display: block;
+
+    width: max-content;
+
+    max-width: 100%;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.mobile-menu a:hover {
+    color: #bdbdbd;
+}
+
+.mobile-menu a.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -5px;
+
+    width: 100%;
+
+    height: 1px;
+
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   768px
+========================================================= */
+
+@media (max-width: 768px) {
+
+    :root {
+        --navbar-height: 121px;
+    }
+
+
+    /* SHIPPING */
+
+    .top-shipping {
+        height: 23px;
+
+        padding: 0 8px;
+
+        font-size: 8px;
+
+        letter-spacing: 0.3px;
+    }
+
+
+    /* MAIN NAV */
+
+    .main-navbar {
+        height: 50px;
+
+        padding: 0 12px;
+    }
+
+
+    /* HIDE DESKTOP NAV */
+
+    .desktop-nav-links {
+        display: none;
+    }
+
+
+    /* LEFT */
+
+    .navbar-left {
+        gap: 6px;
+
+        flex: 1 1 auto;
+
+        min-width: 0;
+
+        overflow: hidden;
+    }
+
+
+    /* MOBILE MENU BUTTON */
+
+    .mobile-menu-btn {
+        display: inline-flex;
+    }
+
+
+    /* LOGO */
+
+    .astrike-logo {
+        font-size: 15px;
+
+        gap: 4px;
+
+        max-width: 150px;
+    }
+
+    .logo-mark {
+        font-size: 17px;
+    }
+
+
+    /* RIGHT */
+
+    .navbar-right {
+        gap: 3px;
+
+        min-width: max-content;
+
+        flex: 0 0 auto;
+
+        margin-left: 6px;
+    }
+
+
+    /* ICON */
+
+    .navbar-icon {
+        width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+
+        height: 30px;
+
+        flex: 0 0 30px;
+    }
+
+    .navbar-icon .material-symbols-outlined {
+        width: 18px;
+        height: 18px;
+
+        font-size: 17px;
+    }
+
+
+    /* ACCOUNT */
+
+    .account-button {
+        width: auto;
+
+        min-width: 30px;
+
+        padding: 0 2px;
+
+        gap: 3px;
+    }
+
+    .account-user-name {
+        max-width: 55px;
+
+        font-size: 9px;
+    }
+
+
+    /* PROFILE AVATAR */
+
+    .account-avatar {
+        width: 21px;
+        min-width: 21px;
+        max-width: 21px;
+
+        height: 21px;
+        min-height: 21px;
+        max-height: 21px;
+
+        flex: 0 0 21px;
+
+        border-radius: 50%;
+    }
+
+    .account-avatar .material-symbols-outlined {
+        font-size: 16px;
+    }
+
+
+    /* ORDERS */
+
+    #ordersBtn {
+        width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+
+        flex: 0 0 30px;
+    }
+
+
+    /* CART */
+
+    .cart-button {
+        width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+
+        flex: 0 0 30px;
+    }
+
+
+    /* CART BADGE */
+
+    .cart-badge {
+        top: 0;
+
+        right: -1px;
+
+        width: 14px;
+        height: 14px;
+
+        font-size: 7px;
+    }
+
+
+    /* LOGOUT */
+
+    .logout-button {
+        width: 55px;
+        min-width: 55px;
+        max-width: 55px;
+
+        height: 30px;
+
+        padding: 0 5px;
+
+        font-size: 9px;
+
+        flex: 0 0 55px;
+    }
+
+
+    /* SEARCH */
+
+    .navbar-search-row {
+        height: 48px;
+
+        padding: 7px 10px;
+    }
+
+    .navbar-search {
+        width: 100%;
+
+        height: 34px;
+    }
+
+    .navbar-search input {
+        padding: 0 10px;
+
+        font-size: 11px;
+    }
+
+    .navbar-search button {
+        width: 35px;
+        min-width: 35px;
+        max-width: 35px;
+
+        flex: 0 0 35px;
+    }
+
+
+    /* MOBILE MENU */
+
+    .mobile-menu {
+        top: 73px;
+
+        padding: 20px 18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   600px
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .main-navbar {
+        padding: 0 9px;
+    }
+
+    .navbar-left {
+        gap: 5px;
+    }
+
+    .navbar-right {
+        gap: 2px;
+
+        margin-left: 4px;
+    }
+
+
+    /* MENU */
+
+    .mobile-menu-btn {
+        width: 29px;
+        min-width: 29px;
+        max-width: 29px;
+
+        height: 29px;
+
+        flex: 0 0 29px;
+
+        font-size: 20px;
+    }
+
+
+    /* LOGO */
+
+    .astrike-logo {
+        font-size: 14px;
+
+        max-width: 140px;
+    }
+
+    .logo-mark {
+        font-size: 16px;
+    }
+
+
+    /* ICONS */
+
+    .navbar-icon {
+        width: 28px;
+        min-width: 28px;
+        max-width: 28px;
+
+        flex: 0 0 28px;
+    }
+
+    .navbar-icon .material-symbols-outlined {
+        font-size: 16px;
+    }
+
+
+    /* ACCOUNT */
+
+    .account-button {
+        min-width: 28px;
+    }
+
+    .account-user-name {
+        max-width: 40px;
+
+        font-size: 8px;
+    }
+
+
+    /* PROFILE */
+
+    .account-avatar {
+        width: 20px;
+        min-width: 20px;
+        max-width: 20px;
+
+        height: 20px;
+        min-height: 20px;
+        max-height: 20px;
+
+        flex: 0 0 20px;
+    }
+
+    .account-avatar .material-symbols-outlined {
+        font-size: 15px;
+    }
+
+
+    /* ORDERS */
+
+    #ordersBtn,
+    .cart-button {
+        width: 28px;
+        min-width: 28px;
+        max-width: 28px;
+
+        flex: 0 0 28px;
+    }
+
+
+    /* LOGOUT */
+
+    .logout-button {
+        width: 52px;
+        min-width: 52px;
+        max-width: 52px;
+
+        flex: 0 0 52px;
+
+        font-size: 8px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    :root {
+        --navbar-height: 121px;
+    }
+
+
+    /* SHIPPING */
+
+    .top-shipping {
+        height: 23px;
+
+        padding: 0 5px;
+
+        font-size: 7px;
+
+        letter-spacing: 0.2px;
+    }
+
+
+    /* MAIN */
+
+    .main-navbar {
+        height: 50px;
+
+        padding: 0 7px;
+    }
+
+
+    /* LEFT */
+
+    .navbar-left {
+        min-width: 0;
+
+        gap: 4px;
+
+        flex: 1 1 auto;
+
+        overflow: hidden;
+    }
+
+
+    /* MENU */
+
+    .mobile-menu-btn {
+        width: 27px;
+        min-width: 27px;
+        max-width: 27px;
+
+        height: 28px;
+
+        flex: 0 0 27px;
+
+        font-size: 19px;
+    }
+
+
+    /* LOGO */
+
+    .astrike-logo {
+        font-size: 13px;
+
+        gap: 3px;
+
+        max-width: 110px;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+    .logo-mark {
+        font-size: 15px;
+    }
+
+
+    /* RIGHT */
+
+    .navbar-right {
+        gap: 1px;
+
+        margin-left: 3px;
+
+        min-width: max-content;
+
+        flex: 0 0 auto;
+
+        overflow: visible;
+    }
+
+
+    /* ICON BUTTONS */
+
+    .navbar-icon {
+        width: 27px;
+        min-width: 27px;
+        max-width: 27px;
+
+        height: 28px;
+
+        flex: 0 0 27px;
+    }
+
+    .navbar-icon .material-symbols-outlined {
+        width: 17px;
+        height: 17px;
+
+        font-size: 15px;
+    }
+
+
+    /* ACCOUNT */
+
+    .account-button {
+        width: 27px;
+
+        min-width: 27px;
+        max-width: 27px;
+
+        padding: 0;
+
+        gap: 0;
+
+        flex: 0 0 27px;
+    }
+
+
+    /* ACCOUNT NAME HIDDEN */
+
+    .account-user-name {
+        display: none;
+    }
+
+
+    /* PROFILE IMAGE */
+
+    .account-avatar {
+        width: 20px;
+        min-width: 20px;
+        max-width: 20px;
+
+        height: 20px;
+        min-height: 20px;
+        max-height: 20px;
+
+        flex: 0 0 20px;
+
+        border-radius: 50%;
+
+        border-width: 1px;
+    }
+
+    .account-avatar .material-symbols-outlined {
+        font-size: 15px;
+    }
+
+
+    /* ORDERS */
+
+    #ordersBtn {
+        width: 27px;
+        min-width: 27px;
+        max-width: 27px;
+
+        flex: 0 0 27px;
+    }
+
+
+    /* CART */
+
+    .cart-button {
+        width: 27px;
+        min-width: 27px;
+        max-width: 27px;
+
+        flex: 0 0 27px;
+    }
+
+
+    /* CART BADGE */
+
+    .cart-badge {
+        top: -1px;
+
+        right: -1px;
+
+        width: 13px;
+        height: 13px;
+
+        font-size: 6px;
+    }
+
+
+    /* LOGOUT */
+
+    .logout-button {
+        width: 48px;
+        min-width: 48px;
+        max-width: 48px;
+
+        height: 27px;
+
+        padding: 0 4px;
+
+        font-size: 8px;
+
+        flex: 0 0 48px;
+
+        overflow: hidden;
+    }
+
+
+    /* SEARCH */
+
+    .navbar-search-row {
+        height: 48px;
+
+        padding: 7px 8px;
+    }
+
+    .navbar-search {
+        width: 100%;
+
+        height: 34px;
+    }
+
+    .navbar-search input {
+        padding: 0 8px;
+
+        font-size: 10px;
+    }
+
+    .navbar-search button {
+        width: 33px;
+        min-width: 33px;
+        max-width: 33px;
+
+        flex: 0 0 33px;
+
+        font-size: 16px;
+    }
+
+
+    /* MOBILE MENU */
+
+    .mobile-menu {
+        top: 73px;
+
+        padding: 18px 15px;
+    }
+
+    .mobile-menu.active {
+        gap: 16px;
+    }
+
+    .mobile-menu a {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   380px
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .main-navbar {
+        padding: 0 5px;
+    }
+
+    .navbar-left {
+        gap: 3px;
+    }
+
+
+    /* MENU */
+
+    .mobile-menu-btn {
+        width: 25px;
+        min-width: 25px;
+        max-width: 25px;
+
+        height: 27px;
+
+        flex-basis: 25px;
+
+        font-size: 18px;
+    }
+
+
+    /* LOGO */
+
+    .astrike-logo {
+        font-size: 12px;
+
+        max-width: 95px;
+    }
+
+    .logo-mark {
+        font-size: 14px;
+    }
+
+
+    /* RIGHT */
+
+    .navbar-right {
+        gap: 0;
+
+        margin-left: 2px;
+    }
+
+
+    /* ICON */
+
+    .navbar-icon {
+        width: 25px;
+        min-width: 25px;
+        max-width: 25px;
+
+        height: 27px;
+
+        flex-basis: 25px;
+    }
+
+
+    /* ACCOUNT */
+
+    .account-button {
+        width: 25px;
+
+        min-width: 25px;
+        max-width: 25px;
+
+        flex-basis: 25px;
+
+        padding: 0;
+    }
+
+
+    /* PROFILE */
+
+    .account-avatar {
+        width: 19px;
+        min-width: 19px;
+        max-width: 19px;
+
+        height: 19px;
+        min-height: 19px;
+        max-height: 19px;
+
+        flex: 0 0 19px;
+    }
+
+    .account-avatar .material-symbols-outlined {
+        font-size: 14px;
+    }
+
+
+    /* ORDERS / CART */
+
+    #ordersBtn,
+    .cart-button {
+        width: 25px;
+        min-width: 25px;
+        max-width: 25px;
+
+        flex-basis: 25px;
+    }
+
+
+    /* LOGOUT */
+
+    .logout-button {
+        width: 45px;
+        min-width: 45px;
+        max-width: 45px;
+
+        flex-basis: 45px;
+
+        height: 26px;
+
+        font-size: 7px;
+
+        padding: 0 3px;
+    }
+
+
+    /* CART BADGE */
+
+    .cart-badge {
+        width: 12px;
+        height: 12px;
+
+        font-size: 6px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   340px
+========================================================= */
+
+@media (max-width: 340px) {
+
+    .main-navbar {
+        padding: 0 4px;
+    }
+
+    .navbar-left {
+        gap: 2px;
+    }
+
+
+    /* MENU */
+
+    .mobile-menu-btn {
+        width: 23px;
+        min-width: 23px;
+        max-width: 23px;
+
+        height: 26px;
+
+        flex-basis: 23px;
+
+        font-size: 17px;
+    }
+
+
+    /* LOGO */
+
+    .astrike-logo {
+        font-size: 11px;
+
+        max-width: 82px;
+    }
+
+    .logo-mark {
+        font-size: 13px;
+    }
+
+
+    /* RIGHT */
+
+    .navbar-right {
+        gap: 0;
+
+        margin-left: 1px;
+    }
+
+
+    /* ICON */
+
+    .navbar-icon {
+        width: 23px;
+        min-width: 23px;
+        max-width: 23px;
+
+        height: 26px;
+
+        flex-basis: 23px;
+    }
+
+
+    /* ACCOUNT */
+
+    .account-button {
+        width: 23px;
+
+        min-width: 23px;
+        max-width: 23px;
+
+        flex-basis: 23px;
+    }
+
+
+    /* PROFILE */
+
+    .account-avatar {
+        width: 17px;
+        min-width: 17px;
+        max-width: 17px;
+
+        height: 17px;
+        min-height: 17px;
+        max-height: 17px;
+
+        flex: 0 0 17px;
+    }
+
+    .account-avatar .material-symbols-outlined {
+        font-size: 13px;
+    }
+
+
+    /* ORDERS / CART */
+
+    #ordersBtn,
+    .cart-button {
+        width: 23px;
+        min-width: 23px;
+        max-width: 23px;
+
+        flex-basis: 23px;
+    }
+
+
+    /* ACCOUNT NAME */
+
+    .account-user-name {
+        display: none;
+    }
+
+
+    /* LOGOUT */
+
+    .logout-button {
+        width: 42px;
+        min-width: 42px;
+        max-width: 42px;
+
+        flex-basis: 42px;
+
+        height: 25px;
+
+        padding: 0 2px;
+
+        font-size: 6.5px;
+    }
+
+
+    /* CART BADGE */
+
+    .cart-badge {
+        width: 11px;
+        height: 11px;
+
+        font-size: 5px;
+    }
+
+
+    /* SEARCH */
+
+    .navbar-search-row {
+        padding: 7px 5px;
+    }
+
+    .navbar-search input {
+        font-size: 9px;
+    }
+
+    .navbar-search button {
+        width: 30px;
+        min-width: 30px;
+        max-width: 30px;
+
+        flex-basis: 30px;
+
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL
+   300px
+========================================================= */
+
+@media (max-width: 300px) {
+
+    .main-navbar {
+        padding: 0 3px;
+    }
+
+
+    /* MENU */
+
+    .mobile-menu-btn {
+        width: 22px;
+        min-width: 22px;
+        max-width: 22px;
+
+        height: 25px;
+
+        flex-basis: 22px;
+
+        font-size: 16px;
+    }
+
+
+    /* LOGO */
+
+    .astrike-logo {
+        font-size: 10px;
+
+        max-width: 70px;
+    }
+
+    .logo-mark {
+        font-size: 12px;
+    }
+
+
+    /* RIGHT */
+
+    .navbar-right {
+        gap: 0;
+    }
+
+
+    /* ICON */
+
+    .navbar-icon {
+        width: 21px;
+        min-width: 21px;
+        max-width: 21px;
+
+        height: 25px;
+
+        flex-basis: 21px;
+    }
+
+
+    /* ACCOUNT */
+
+    .account-button {
+        width: 21px;
+
+        min-width: 21px;
+        max-width: 21px;
+
+        flex-basis: 21px;
+
+        padding: 0;
+    }
+
+
+    /* PROFILE */
+
+    .account-avatar {
+        width: 16px;
+        min-width: 16px;
+        max-width: 16px;
+
+        height: 16px;
+        min-height: 16px;
+        max-height: 16px;
+
+        flex: 0 0 16px;
+    }
+
+    .account-avatar .material-symbols-outlined {
+        font-size: 12px;
+    }
+
+
+    /* ORDERS / CART */
+
+    #ordersBtn,
+    .cart-button {
+        width: 21px;
+        min-width: 21px;
+        max-width: 21px;
+
+        flex-basis: 21px;
+    }
+
+
+    /* ACCOUNT NAME */
+
+    .account-user-name {
+        display: none;
+    }
+
+
+    /* LOGOUT */
+
+    .logout-button {
+        width: 38px;
+        min-width: 38px;
+        max-width: 38px;
+
+        flex-basis: 38px;
+
+        height: 24px;
+
+        padding: 0 2px;
+
+        font-size: 6px;
+    }
+
+
+    /* CART */
+
+    .cart-badge {
+        width: 10px;
+        height: 10px;
+
+        font-size: 5px;
+    }
+
+
+    /* SEARCH */
+
+    .navbar-search-row {
+        padding: 7px 4px;
+    }
+
+    .navbar-search {
+        height: 33px;
+    }
+
+    .navbar-search input {
+        padding: 0 6px;
+
+        font-size: 9px;
+    }
+
+    .navbar-search button {
+        width: 28px;
+        min-width: 28px;
+        max-width: 28px;
+
+        flex-basis: 28px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.navbar-icon:focus-visible,
+.mobile-menu-btn:focus-visible,
+.navbar-search button:focus-visible,
+.desktop-nav-links a:focus-visible,
+.mobile-menu a:focus-visible,
+.astrike-logo:focus-visible,
+.logout-button:focus-visible,
+.account-button:focus-visible {
+    outline: 1px solid #ffffff;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .desktop-nav-links a,
+    .desktop-nav-links a::after,
+    .navbar-icon,
+    .mobile-menu-btn,
+    .navbar-search,
+    .navbar-search button,
+    .mobile-menu a,
+    .account-user-name,
+    .logout-button,
+    .astrike-logo,
+    .account-avatar,
+    .account-avatar .navbar-profile-image {
+        transition: none;
+    }
+}

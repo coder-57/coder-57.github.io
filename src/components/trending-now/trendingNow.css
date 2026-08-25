@@ -1,0 +1,859 @@
+/* ========================================
+   ASTRIKE SPORTS
+   TRENDING NOW
+======================================== */
+
+
+/* ========================================
+   SECTION
+======================================== */
+
+.trending-now-section {
+    width: 100%;
+    padding: 55px 4.5% 65px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.trending-now-header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.trending-now-title {
+    min-width: 0;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 700;
+
+    letter-spacing: 2.3px;
+
+    color: #777;
+
+    text-transform: uppercase;
+}
+
+.trending-now-title h2 {
+    margin: 0;
+
+    font-size: 34px;
+    line-height: 1.15;
+    font-weight: 750;
+
+    letter-spacing: -0.7px;
+
+    color: #111;
+}
+
+
+/* ========================================
+   VIEW ALL
+======================================== */
+
+.view-all {
+    flex-shrink: 0;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 0 4px;
+
+    color: #111;
+
+    font-size: 13px;
+    font-weight: 650;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+.view-all:hover {
+    opacity: 0.6;
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   SLIDER WRAPPER
+======================================== */
+
+.trending-now-slider-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.trending-now-slider {
+    width: 100%;
+
+    display: grid;
+
+    grid-auto-flow: column;
+
+    grid-auto-columns:
+        calc(
+            (100% - 72px) / 5
+        );
+
+    gap: 18px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+
+    padding: 4px 4px 12px;
+
+    box-sizing: border-box;
+}
+
+.trending-now-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ========================================
+   PRODUCT CARD
+======================================== */
+
+.trending-now-card {
+    width: 100%;
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    scroll-snap-align: start;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* ========================================
+   CARD HOVER
+======================================== */
+
+.trending-now-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ========================================
+   PRODUCT IMAGE
+======================================== */
+
+.trending-now-image {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1.22;
+
+    overflow: hidden;
+
+    background: #f4f4f4;
+
+    border-radius: 0;
+
+    text-decoration: none;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.trending-now-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.55s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        );
+}
+
+
+/* ========================================
+   IMAGE HOVER
+======================================== */
+
+.trending-now-card:hover
+.trending-now-image img {
+    transform: scale(1.055);
+}
+
+
+/* ========================================
+   PRODUCT INFO
+======================================== */
+
+.trending-now-info {
+    width: 100%;
+
+    padding: 13px 2px 5px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   PRODUCT NAME
+   ONLY ONE LINE
+   EXTRA TEXT = ...
+======================================== */
+
+.trending-now-info h3 {
+    width: 100%;
+
+    display: block;
+
+    margin: 0 0 7px;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    letter-spacing: -0.1px;
+
+    color: #171717;
+
+    /* IMPORTANT */
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ========================================
+   PRICE
+   NEW PRICE ONLY
+======================================== */
+
+.trending-now-info .product-price {
+    width: 100%;
+
+    min-height: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.trending-now-info
+.product-price strong {
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    font-weight: 750;
+
+    letter-spacing: -0.2px;
+
+    color: #111;
+}
+
+
+/* ========================================
+   HIDE EXTRA INFORMATION
+======================================== */
+
+.trending-now-card .product-brand,
+.trending-now-card .product-rating,
+.trending-now-card .old-price,
+.trending-now-card .discount,
+.trending-now-card .discount-badge {
+    display: none !important;
+}
+
+
+/* ========================================
+   SLIDER BUTTONS
+======================================== */
+
+.slider-btn {
+    position: absolute;
+
+    z-index: 10;
+
+    top: 50%;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 50%;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.96
+    );
+
+    color: #111;
+
+    font-size: 19px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 18px rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+
+    transform:
+        translateY(-50%);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+/* ========================================
+   PREVIOUS
+======================================== */
+
+.trending-now-prev {
+    left: -22px;
+}
+
+
+/* ========================================
+   NEXT
+======================================== */
+
+.trending-now-next {
+    right: -22px;
+}
+
+
+/* ========================================
+   BUTTON HOVER
+======================================== */
+
+.slider-btn:hover:not(:disabled) {
+    background: #111;
+
+    color: #fff;
+
+    border-color: #111;
+
+    transform:
+        translateY(-50%)
+        scale(1.05);
+}
+
+
+/* ========================================
+   DISABLED BUTTON
+======================================== */
+
+.slider-btn:disabled {
+    cursor: default;
+
+    opacity: 0.45;
+
+    box-shadow: none;
+}
+
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.trending-now-empty {
+    width: 100%;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.trending-now-empty .section-label {
+    margin-bottom: 10px;
+}
+
+.trending-now-empty h2 {
+    margin: 0 0 10px;
+
+    font-size: 28px;
+
+    color: #111;
+}
+
+.trending-now-empty p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+   1400px+
+======================================== */
+
+@media (min-width: 1400px) {
+
+    .trending-now-section {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .trending-now-slider {
+        grid-auto-columns:
+            calc(
+                (100% - 80px) / 5
+            );
+
+        gap: 20px;
+    }
+
+    .trending-now-info h3 {
+        font-size: 15px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .trending-now-info
+    .product-price strong {
+        font-size: 17px;
+    }
+}
+
+
+/* ========================================
+   TABLET / LAPTOP
+   769px - 1100px
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .trending-now-section {
+        padding: 45px 4% 55px;
+    }
+
+    .trending-now-title h2 {
+        font-size: 31px;
+    }
+
+    .trending-now-slider {
+        grid-auto-columns:
+            calc(
+                (100% - 36px) / 3
+            );
+
+        gap: 18px;
+    }
+
+    .trending-now-image {
+        aspect-ratio: 1 / 1.2;
+    }
+
+    .slider-btn {
+        width: 40px;
+        height: 40px;
+
+        font-size: 17px;
+    }
+
+    .trending-now-prev {
+        left: -19px;
+    }
+
+    .trending-now-next {
+        right: -19px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+   <= 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+    .trending-now-section {
+        padding: 35px 14px 45px;
+    }
+
+
+    /* HEADER */
+
+    .trending-now-header {
+        align-items: flex-end;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* LABEL */
+
+    .section-label {
+        margin-bottom: 7px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    /* TITLE */
+
+    .trending-now-title h2 {
+        font-size: 27px;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    /* VIEW ALL */
+
+    .view-all {
+        font-size: 12px;
+
+        min-height: 34px;
+    }
+
+
+    /* SLIDER */
+
+    .trending-now-slider {
+        grid-auto-columns:
+            calc(
+                (100% - 12px) / 2
+            );
+
+        gap: 12px;
+
+        padding:
+            3px
+            3px
+            10px;
+    }
+
+
+    /* IMAGE */
+
+    .trending-now-image {
+        aspect-ratio: 1 / 1.2;
+
+        border-radius: 0;
+    }
+
+
+    /* CARD */
+
+    .trending-now-card {
+        border-radius: 0;
+    }
+
+
+    /* INFO */
+
+    .trending-now-info {
+        padding: 10px 1px 3px;
+    }
+
+
+    /* NAME */
+
+    .trending-now-info h3 {
+        width: 100%;
+
+        font-size: 13px;
+
+        line-height: 1.35;
+
+        margin: 0 0 5px;
+
+        /* ONE LINE */
+        white-space: nowrap;
+
+        /* HIDE EXTRA */
+        overflow: hidden;
+
+        /* SHOW ... */
+        text-overflow: ellipsis;
+    }
+
+
+    /* PRICE */
+
+    .trending-now-info
+    .product-price strong {
+        font-size: 15px;
+    }
+
+
+    /* BUTTON */
+
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+    .trending-now-prev {
+        left: -8px;
+    }
+
+    .trending-now-next {
+        right: -8px;
+    }
+
+
+    /* MOBILE HOVER */
+
+    .trending-now-card:hover {
+        transform: none;
+    }
+
+    .trending-now-card:hover
+    .trending-now-image img {
+        transform: none;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   <= 420px
+======================================== */
+
+@media (max-width: 420px) {
+
+    .trending-now-section {
+        padding:
+            30px
+            10px
+            40px;
+    }
+
+
+    .trending-now-title h2 {
+        font-size: 24px;
+    }
+
+
+    .view-all {
+        font-size: 11px;
+    }
+
+
+    .trending-now-slider {
+        grid-auto-columns:
+            calc(
+                (100% - 10px) / 2
+            );
+
+        gap: 10px;
+    }
+
+
+    /* IMAGE */
+
+    .trending-now-image {
+        aspect-ratio: 1 / 1.18;
+
+        border-radius: 0;
+    }
+
+
+    /* CARD */
+
+    .trending-now-card {
+        border-radius: 0;
+    }
+
+
+    /* INFO */
+
+    .trending-now-info {
+        padding-top: 9px;
+    }
+
+
+    /* PRODUCT NAME */
+
+    .trending-now-info h3 {
+        width: 100%;
+
+        font-size: 12px;
+
+        margin: 0 0 5px;
+
+        line-height: 1.35;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* PRICE */
+
+    .trending-now-info
+    .product-price strong {
+        font-size: 14px;
+    }
+
+
+    /* BUTTON */
+
+    .slider-btn {
+        width: 32px;
+        height: 32px;
+
+        font-size: 13px;
+    }
+
+    .trending-now-prev {
+        left: -5px;
+    }
+
+    .trending-now-next {
+        right: -5px;
+    }
+}
+
+
+/* ========================================
+   VERY SMALL MOBILE
+   <= 360px
+======================================== */
+
+@media (max-width: 360px) {
+
+    .trending-now-section {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+
+    .trending-now-title h2 {
+        font-size: 22px;
+    }
+
+
+    .trending-now-slider {
+        gap: 8px;
+
+        grid-auto-columns:
+            calc(
+                (100% - 8px) / 2
+            );
+    }
+
+
+    .trending-now-info h3 {
+        width: 100%;
+
+        font-size: 11.5px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .trending-now-info
+    .product-price strong {
+        font-size: 13px;
+    }
+}

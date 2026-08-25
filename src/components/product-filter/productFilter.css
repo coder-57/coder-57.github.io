@@ -1,0 +1,916 @@
+/* ==================================================
+   PRODUCT FILTER
+================================================== */
+
+
+/* ==================================================
+   BODY LOCK
+================================================== */
+
+body.filter-open {
+    overflow: hidden;
+}
+
+
+/* ==================================================
+   FILTER TOOLBAR
+================================================== */
+
+.product-filter-toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    margin-bottom: 25px;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* ==================================================
+   FILTER OPEN BUTTON
+================================================== */
+
+.filter-open-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    height: 42px;
+
+    padding: 0 20px;
+
+    border: 1px solid #111;
+    background: #111;
+    color: #fff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.filter-open-btn:hover {
+    background: #fff;
+    color: #111;
+}
+
+
+.filter-open-btn span {
+    font-size: 15px;
+}
+
+
+/* ==================================================
+   RESULT COUNT
+================================================== */
+
+.filter-result-count {
+    color: #666;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+}
+
+
+/* ==================================================
+   FILTER OVERLAY
+================================================== */
+
+.product-filter-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 9998;
+
+    transition:
+        opacity 0.3s ease,
+        visibility 0.3s ease;
+}
+
+
+.product-filter-overlay.overlay-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ==================================================
+   FILTER SIDEBAR
+================================================== */
+
+.product-filter {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 370px;
+    max-width: 90vw;
+
+    height: 100vh;
+
+    background: #fff;
+
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: auto;
+
+    transform: translateX(-100%);
+
+    transition:
+        transform 0.35s cubic-bezier(
+            0.4,
+            0,
+            0.2,
+            1
+        );
+
+    box-shadow:
+        8px 0 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.product-filter.filter-active {
+    transform: translateX(0);
+}
+
+
+/* ==================================================
+   FILTER SCROLLBAR
+================================================== */
+
+.product-filter::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+.product-filter::-webkit-scrollbar-track {
+    background: #f5f5f5;
+}
+
+
+.product-filter::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+}
+
+
+.product-filter::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+
+/* ==================================================
+   FILTER HEADER
+================================================== */
+
+.product-filter-header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 28px 28px 24px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    flex-shrink: 0;
+}
+
+
+/* ==================================================
+   FILTER EYEBROW
+================================================== */
+
+.filter-eyebrow {
+    margin: 0 0 5px;
+
+    color: #888;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.product-filter-header h2 {
+    margin: 0;
+
+    color: #111;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    letter-spacing: -0.4px;
+}
+
+
+/* ==================================================
+   CLOSE BUTTON
+================================================== */
+
+.filter-close {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #e5e5e5;
+
+    background: #fff;
+    color: #111;
+
+    font-size: 25px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.filter-close:hover {
+    background: #111;
+    border-color: #111;
+    color: #fff;
+}
+
+
+/* ==================================================
+   FILTER GROUP
+================================================== */
+
+.filter-group {
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* ==================================================
+   FILTER GROUP TITLE
+================================================== */
+
+.filter-group-title {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 28px;
+
+    border: 0;
+
+    background: #fff;
+    color: #111;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.filter-group-title:hover {
+    background: #fafafa;
+}
+
+
+.filter-group-title span:last-child {
+    font-size: 20px;
+    font-weight: 300;
+
+    line-height: 1;
+
+    color: #666;
+}
+
+
+.filter-group-title.filter-title-active {
+    color: #000;
+}
+
+
+/* ==================================================
+   FILTER CONTENT
+================================================== */
+
+.filter-content {
+    max-height: 0;
+
+    overflow: hidden;
+
+    padding: 0 28px;
+
+    opacity: 0;
+
+    transition:
+        max-height 0.3s ease,
+        opacity 0.25s ease,
+        padding 0.3s ease;
+}
+
+
+.filter-content.filter-content-open {
+    max-height: 500px;
+
+    padding: 0 28px 20px;
+
+    opacity: 1;
+}
+
+
+/* ==================================================
+   CHECKBOX
+================================================== */
+
+.filter-checkbox {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+
+    margin-bottom: 13px;
+
+    color: #444;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+
+.filter-checkbox:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Hide default checkbox */
+
+.filter-checkbox input {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+}
+
+
+/* Custom checkbox */
+
+.filter-checkbox span {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 20px;
+
+    padding-left: 28px;
+
+    transition:
+        color 0.2s ease;
+}
+
+
+.filter-checkbox span::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid #cfcfcf;
+
+    background: #fff;
+
+    transform:
+        translateY(-50%);
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.filter-checkbox span::after {
+    content: "✓";
+
+    position: absolute;
+
+    left: 4px;
+    top: 50%;
+
+    color: #fff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    opacity: 0;
+
+    transform:
+        translateY(-50%)
+        scale(0.5);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Checked */
+
+.filter-checkbox input:checked + span {
+    color: #111;
+
+    font-weight: 600;
+}
+
+
+.filter-checkbox input:checked + span::before {
+    background: #111;
+    border-color: #111;
+}
+
+
+.filter-checkbox input:checked + span::after {
+    opacity: 1;
+
+    transform:
+        translateY(-50%)
+        scale(1);
+}
+
+
+/* Hover */
+
+.filter-checkbox:hover span {
+    color: #111;
+}
+
+
+/* ==================================================
+   PRICE INPUTS
+================================================== */
+
+.price-inputs {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.price-inputs input {
+    width: 100%;
+    height: 42px;
+
+    padding: 0 12px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    background: #fff;
+    color: #111;
+
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s ease;
+}
+
+
+.price-inputs input:focus {
+    border-color: #111;
+}
+
+
+.price-inputs span {
+    color: #999;
+
+    font-size: 13px;
+}
+
+
+/* Remove number arrows */
+
+.price-inputs input::-webkit-inner-spin-button,
+.price-inputs input::-webkit-outer-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none;
+}
+
+
+.price-inputs input[type="number"] {
+    appearance: textfield;
+}
+
+
+/* ==================================================
+   SIZE OPTIONS
+================================================== */
+
+.size-options {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.size-option {
+    position: relative;
+
+    cursor: pointer;
+}
+
+
+.size-option input {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+}
+
+
+.size-option span {
+    min-width: 44px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 12px;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+    color: #444;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.size-option:hover span {
+    border-color: #111;
+    color: #111;
+}
+
+
+.size-option input:checked + span {
+    background: #111;
+    border-color: #111;
+    color: #fff;
+}
+
+
+/* ==================================================
+   RATING
+================================================== */
+
+.rating-option span {
+    letter-spacing: 1px;
+}
+
+
+.rating-option span::before {
+    display: none;
+}
+
+
+.rating-option span::after {
+    display: none;
+}
+
+
+.rating-option span {
+    padding-left: 28px;
+}
+
+
+/* ==================================================
+   EMPTY FILTER
+================================================== */
+
+.filter-empty {
+    margin: 0;
+
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+/* ==================================================
+   FILTER ACTIONS
+================================================== */
+
+.filter-actions {
+    position: sticky;
+
+    bottom: 0;
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: auto;
+
+    padding: 18px 28px;
+
+    background: #fff;
+
+    border-top: 1px solid #eeeeee;
+
+    box-shadow:
+        0 -5px 20px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ==================================================
+   CLEAR BUTTON
+================================================== */
+
+.filter-reset {
+    flex: 1;
+
+    height: 46px;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+    color: #111;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.filter-reset:hover {
+    border-color: #111;
+    background: #111;
+    color: #fff;
+}
+
+
+/* ==================================================
+   APPLY BUTTON
+================================================== */
+
+.filter-apply {
+    flex: 1;
+
+    height: 46px;
+
+    border: 1px solid #111;
+
+    background: #111;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.7px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.filter-apply:hover {
+    background: #fff;
+    color: #111;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .product-filter-toolbar {
+        padding: 14px 0;
+
+        margin-bottom: 18px;
+    }
+
+
+    .filter-open-btn {
+        height: 40px;
+
+        padding: 0 16px;
+
+        font-size: 12px;
+    }
+
+
+    .filter-result-count {
+        font-size: 11px;
+    }
+
+
+    .product-filter {
+        width: 340px;
+        max-width: 88vw;
+    }
+
+
+    .product-filter-header {
+        padding: 22px 20px 20px;
+    }
+
+
+    .product-filter-header h2 {
+        font-size: 21px;
+    }
+
+
+    .filter-group-title {
+        padding: 18px 20px;
+
+        font-size: 13px;
+    }
+
+
+    .filter-content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .filter-content.filter-content-open {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .filter-actions {
+        padding: 14px 20px;
+    }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 480px) {
+
+    .product-filter-toolbar {
+        margin-bottom: 15px;
+    }
+
+
+    .filter-open-btn {
+        height: 38px;
+
+        padding: 0 14px;
+
+        font-size: 11px;
+    }
+
+
+    .filter-result-count {
+        font-size: 10px;
+    }
+
+
+    .product-filter {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .product-filter-header {
+        padding: 20px 18px;
+    }
+
+
+    .filter-group-title {
+        padding: 17px 18px;
+    }
+
+
+    .filter-content {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    .filter-content.filter-content-open {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+
+    .filter-actions {
+        padding: 12px 18px;
+    }
+
+
+    .filter-reset,
+    .filter-apply {
+        height: 44px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .product-filter,
+    .product-filter-overlay,
+    .filter-content,
+    .filter-checkbox span::before,
+    .filter-checkbox span::after,
+    .size-option span {
+        transition: none;
+    }
+
+}

@@ -1,0 +1,946 @@
+[
+  {
+    "id": 1,
+    "slug": "men-performance-printed-active-tshirt",
+    "name": "Men Performance Printed Active T-Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "T-shirt",
+    "gender": "men",
+    "collections": [
+      "best-sellers",
+      "trending-now"
+    ],
+    "price": 699,
+    "oldPrice": 999,
+    "discount": "30% OFF",
+    "currency": "₹",
+    "rating": 4.5,
+    "reviews": 128,
+    "sold": 312,
+    "stock": 85,
+    "fit": "Regular Fit",
+    "fabric": "100% Polyester",
+    "productDetails": "Stay comfortable during workouts and everyday activities with this men's performance T-shirt. Designed with lightweight breathable fabric, quick-dry comfort and an athletic feel for unrestricted movement.",
+    "colors": [
+      {
+        "name": "Berry Red",
+        "images": [
+          "/images/products/men/t-shirt/p702/P702BerryRed_1_556ed6b8-9b20-4ad6-85db-cddacb741ef2.webp",
+          "/images/products/men/t-shirt/p702/P702BerryRed_2_7c902ba0-9790-4b2a-8fac-ed0c8cabeb31.webp",
+          "/images/products/men/t-shirt/p702/P702BerryRed_3_ee097254-f470-4376-ac7c-d55198d743d9.webp",
+          "/images/products/men/t-shirt/p702/P702BerryRed_7_16acf556-5c8f-472b-acac-e46c6980dd47.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 15,
+          "L": 20,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Black",
+        "images": [
+          "/images/products/men/t-shirt/p702/P702Black_1_2f8fc3f8-5434-4913-bc95-49d1522e9128.webp",
+          "/images/products/men/t-shirt/p702/P702Black_2_1f9a06f5-1ec8-4db9-ad8b-963d15f88ff0.webp",
+          "/images/products/men/t-shirt/p702/P702Black_3_6ceabf0e-ec09-476a-bc22-1b4826cfeac7.webp",
+          "/images/products/men/t-shirt/p702/P702Black_4_022ad147-7cf8-495c-bc82-effd4a4728d5.webp",
+          "/images/products/men/t-shirt/p702/P702Black_5_cbc89817-c594-4243-8630-551e6a7540aa.webp"
+        ],
+        "sizes": {
+          "S": 12,
+          "M": 18,
+          "L": 25,
+          "XL": 12,
+          "XXL": 6
+        }
+      },
+      {
+        "name": "Grape Vine",
+        "images": [
+          "/images/products/men/t-shirt/p702/P702GrapeVine_1_cc2ab971-2c8e-46ba-ac62-be7f29f682d7.webp",
+          "/images/products/men/t-shirt/p702/P702GrapeVine_2_c798e478-d1e7-4b2b-9e11-37a4066fc7ef.webp",
+          "/images/products/men/t-shirt/p702/P702GrapeVine_3_f6fde09d-0d91-4912-9f3c-864d58cbdcbf.webp",
+          "/images/products/men/t-shirt/p702/P702GrapeVine_4_2bb9aeec-2bd4-4f2a-9e8a-d4337fc0784c.webp",
+          "/images/products/men/t-shirt/p702/P702GrapeVine_5_18092cb1-d9d6-48be-a69d-e85e51a3d85a.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 14,
+          "L": 22,
+          "XL": 9,
+          "XXL": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "men-gulf-coast-performance-tshirt",
+    "name": "Men Gulf Coast Performance T-Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "T-shirt",
+    "gender": "men",
+    "collections": [
+      "summer-collection",
+      "new-arrivals"
+    ],
+    "price": 649,
+    "oldPrice": 949,
+    "discount": "32% OFF",
+    "currency": "₹",
+    "rating": 4.4,
+    "reviews": 96,
+    "sold": 227,
+    "stock": 72,
+    "fit": "Regular Fit",
+    "fabric": "100% Polyester",
+    "productDetails": "A lightweight performance T-shirt created for active lifestyles. Its smooth fabric delivers breathable comfort and easy movement, making it suitable for workouts, running and casual outdoor wear.",
+    "colors": [
+      {
+        "name": "Gulf Coast",
+        "images": [
+          "/images/products/men/t-shirt/p712/p712GulfCoast_1.webp",
+          "/images/products/men/t-shirt/p712/p712GulfCoast_2.webp",
+          "/images/products/men/t-shirt/p712/p712GulfCoast_3.webp",
+          "/images/products/men/t-shirt/p712/p712GulfCoast_4.webp",
+          "/images/products/men/t-shirt/p712/p712GulfCoast_5.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 16,
+          "L": 20,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Lake Green",
+        "images": [
+          "/images/products/men/t-shirt/p712/P712_20Lake_20Green_1_c237c604-dfa3-4971-87f7-8ba77be69700.webp",
+          "/images/products/men/t-shirt/p712/P712_20Lake_20Green_2_44164abd-a564-4691-a9c6-0efc2348d1bd.webp",
+          "/images/products/men/t-shirt/p712/P712_20Lake_20Green_3_ff337c9c-7a4f-4e9e-b3f7-5f256d38014d.webp",
+          "/images/products/men/t-shirt/p712/P712_20Lake_20Green_4_a99631b0-66d1-438b-8865-e4ee84d3efb0.webp",
+          "/images/products/men/t-shirt/p712/P712_20Lake_20Green_5_aaa12cf8-93a5-427a-a158-5597c4504694.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 14,
+          "L": 18,
+          "XL": 8,
+          "XXL": 4
+        }
+      },
+      {
+        "name": "Light Navy",
+        "images": [
+          "/images/products/men/t-shirt/p712/P712_20Light_20Navy_1_91dec838-6b81-4fc7-af30-066a6ea73f0b.webp",
+          "/images/products/men/t-shirt/p712/P712_20Light_20Navy_2_68175074-400b-42f8-b72b-8f827bf9d730.webp",
+          "/images/products/men/t-shirt/p712/P712_20Light_20Navy_3_85d500a9-1a77-4364-a2af-29d91a87568f.webp",
+          "/images/products/men/t-shirt/p712/P712_20Light_20Navy_4_ff52d724-4fa6-4bbe-aaf7-97a8adf83b91.webp",
+          "/images/products/men/t-shirt/p712/P712_20Light_20Navy_5_a38ccc2a-f844-4099-9761-1530d2cdd8ab.webp"
+        ],
+        "sizes": {
+          "S": 9,
+          "M": 15,
+          "L": 21,
+          "XL": 9,
+          "XXL": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "men-graphic-active-tshirt",
+    "name": "Men Graphic Active T-Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "T-shirt",
+    "gender": "men",
+    "collections": [
+      "new-arrivals",
+      "trending-now"
+    ],
+    "price": 749,
+    "oldPrice": 1099,
+    "discount": "32% OFF",
+    "currency": "₹",
+    "rating": 4.6,
+    "reviews": 143,
+    "sold": 386,
+    "stock": 91,
+    "fit": "Regular Fit",
+    "fabric": "100% Polyester",
+    "productDetails": "Make a bold statement with this graphic performance T-shirt. The athletic silhouette and lightweight performance fabric provide everyday comfort while keeping your look sporty and modern.",
+    "colors": [
+      {
+        "name": "Fiery Canopy",
+        "images": [
+          "/images/products/men/t-shirt/p747/P747FieryCanopy_1.webp",
+          "/images/products/men/t-shirt/p747/P747FieryCanopy_2.webp",
+          "/images/products/men/t-shirt/p747/P747FieryCanopy_3.webp",
+          "/images/products/men/t-shirt/p747/P747FieryCanopy_8.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 14,
+          "L": 20,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Green Glitch",
+        "images": [
+          "/images/products/men/t-shirt/p747/P747GreenGlitch_1.webp",
+          "/images/products/men/t-shirt/p747/P747GreenGlitch_2.webp",
+          "/images/products/men/t-shirt/p747/P747GreenGlitch_3.webp",
+          "/images/products/men/t-shirt/p747/P747GreenGlitch_4.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 16,
+          "L": 24,
+          "XL": 11,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Red Smudge",
+        "images": [
+          "/images/products/men/t-shirt/p747/P747RedSmudge_1.webp",
+          "/images/products/men/t-shirt/p747/P747RedSmudge_2.webp",
+          "/images/products/men/t-shirt/p747/P747RedSmudge_3.webp",
+          "/images/products/men/t-shirt/p747/P747RedSmudge_4.webp",
+          "/images/products/men/t-shirt/p747/P747RedSmudge_5.webp",
+          "/images/products/men/t-shirt/p747/P747RedSmudge_9.webp"
+        ],
+        "sizes": {
+          "S": 9,
+          "M": 15,
+          "L": 23,
+          "XL": 10,
+          "XXL": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "men-active-performance-tshirt",
+    "name": "Men Active Performance T-Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "T-shirt",
+    "gender": "men",
+    "collections": [
+      "summer-collection",
+      "trending-now"
+    ],
+    "price": 599,
+    "oldPrice": 899,
+    "discount": "33% OFF",
+    "currency": "₹",
+    "rating": 4.5,
+    "reviews": 101,
+    "sold": 245,
+    "stock": 88,
+    "fit": "Regular Fit",
+    "fabric": "100% Polyester",
+    "productDetails": "Stay cool and stylish in this men's active T-shirt featuring lightweight performance fabric for breathable comfort. Designed for workouts, sports and everyday summer activities.",
+    "colors": [
+      {
+        "name": "Lilac",
+        "images": [
+          "/images/products/men/t-shirt/p824/P824LILAC-01.webp",
+          "/images/products/men/t-shirt/p824/P824LILAC-02.webp",
+          "/images/products/men/t-shirt/p824/P824LILAC-03.webp",
+          "/images/products/men/t-shirt/p824/P824LILAC-06.webp",
+          "/images/products/men/t-shirt/p824/P824LILAC-07.webp",
+          "/images/products/men/t-shirt/p824/P824LILAC-09.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 15,
+          "L": 20,
+          "XL": 5,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Mint Green",
+        "images": [
+          "/images/products/men/t-shirt/p824/P824MINTGREEN-01.webp",
+          "/images/products/men/t-shirt/p824/P824MINTGREEN-02.webp",
+          "/images/products/men/t-shirt/p824/P824MINTGREEN-03.webp",
+          "/images/products/men/t-shirt/p824/P824MINTGREEN-04.webp",
+          "/images/products/men/t-shirt/p824/P824MINTGREEN-05.webp",
+          "/images/products/men/t-shirt/p824/P824MINTGREEN-06.webp",
+          "/images/products/men/t-shirt/p824/P824MINTGREEN-08.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 12,
+          "L": 18,
+          "XL": 7,
+          "XXL": 7
+        }
+      },
+      {
+        "name": "Yellow",
+        "images": [
+          "/images/products/men/t-shirt/p824/P824Yellow-01.webp",
+          "/images/products/men/t-shirt/p824/P824Yellow-02.webp",
+          "/images/products/men/t-shirt/p824/P824Yellow-03.webp",
+          "/images/products/men/t-shirt/p824/P824Yellow-04.webp",
+          "/images/products/men/t-shirt/p824/P824Yellow-05.webp",
+          "/images/products/men/t-shirt/p824/P824Yellow-06.webp",
+          "/images/products/men/t-shirt/p824/P824Yellow-07.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 12,
+          "L": 18,
+          "XL": 7,
+          "XXL": 7
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "men-lightweight-performance-tshirt",
+    "name": "Men Lightweight Performance T-Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "T-shirt",
+    "gender": "men",
+    "collections": [
+      "best-sellers",
+      "trending-now"
+    ],
+    "price": 679,
+    "oldPrice": 999,
+    "discount": "32% OFF",
+    "currency": "₹",
+    "rating": 4.4,
+    "reviews": 87,
+    "sold": 198,
+    "stock": 67,
+    "fit": "Regular Fit",
+    "fabric": "100% Polyester",
+    "productDetails": "Built for movement and everyday performance, this lightweight T-shirt offers a smooth touch, breathable feel and sporty styling for training and casual wear.",
+    "colors": [
+      {
+        "name": "Black",
+        "images": [
+          "/images/products/men/t-shirt/p871/P871Black_1.webp",
+          "/images/products/men/t-shirt/p871/P871Black_2.webp",
+          "/images/products/men/t-shirt/p871/P871Black_3.webp",
+          "/images/products/men/t-shirt/p871/P871Black_4.webp",
+          "/images/products/men/t-shirt/p871/P871Black_5.webp"
+        ],
+        "sizes": {
+          "S": 12,
+          "M": 18,
+          "L": 25,
+          "XL": 12,
+          "XXL": 6
+        }
+      },
+      {
+        "name": "Light Lime",
+        "images": [
+          "/images/products/men/t-shirt/p871/P871LIGHTLIME-01_420fc982-47a8-4457-91bf-22fc95cdf550.webp",
+          "/images/products/men/t-shirt/p871/P871LIGHTLIME-03_0d6bccb7-077a-4024-bd20-d4f3a3c08e83.webp",
+          "/images/products/men/t-shirt/p871/P871LIGHTLIME-04_17528d42-bc33-4e10-b0a2-fb1bd7e55b4a.webp",
+          "/images/products/men/t-shirt/p871/P871LIGHTLIME-05_1423840b-c64c-45e0-821c-42c35cda8b1d.webp",
+          "/images/products/men/t-shirt/p871/P871LIGHTLIME-06_ae375b11-e356-4a23-a037-ab8374101740.webp"
+        ],
+        "sizes": {
+          "S": 9,
+          "M": 15,
+          "L": 20,
+          "XL": 9,
+          "XXL": 4
+        }
+      },
+      {
+        "name": "Terracotta",
+        "images": [
+          "/images/products/men/t-shirt/p871/P871Terracotta_1.webp",
+          "/images/products/men/t-shirt/p871/P871Terracotta_2.webp",
+          "/images/products/men/t-shirt/p871/P871Terracotta_3.webp",
+          "/images/products/men/t-shirt/p871/P871Terracotta_4.webp",
+          "/images/products/men/t-shirt/p871/P871Terracotta_5.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 14,
+          "L": 19,
+          "XL": 8,
+          "XXL": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "men-aqua-grey-sports-tshirt",
+    "name": "Men Aqua Grey Sports T-Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "T-shirt",
+    "gender": "men",
+    "collections": [
+      "summer-collection",
+      "trending-now"
+    ],
+    "price": 629,
+    "oldPrice": 949,
+    "discount": "34% OFF",
+    "currency": "₹",
+    "rating": 4.6,
+    "reviews": 119,
+    "sold": 274,
+    "stock": 79,
+    "fit": "Regular Fit",
+    "fabric": "100% Polyester",
+    "productDetails": "Designed for active days, this performance T-shirt combines a lightweight construction with comfortable stretch and breathable fabric for effortless movement.",
+    "colors": [
+      {
+        "name": "Aqua Grey",
+        "images": [
+          "/images/products/men/t-shirt/p880/P880AquaGrey_1.webp",
+          "/images/products/men/t-shirt/p880/P880AquaGrey_2.webp",
+          "/images/products/men/t-shirt/p880/P880AquaGrey_3.webp",
+          "/images/products/men/t-shirt/p880/P880AquaGrey_4.webp",
+          "/images/products/men/t-shirt/p880/P880AquaGrey_5.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 16,
+          "L": 22,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Horizon Blue",
+        "images": [
+          "/images/products/men/t-shirt/p880/P880horizonBlue_1.webp",
+          "/images/products/men/t-shirt/p880/P880horizonBlue_2.webp",
+          "/images/products/men/t-shirt/p880/P880horizonBlue_3.webp",
+          "/images/products/men/t-shirt/p880/P880horizonBlue_6.jpg",
+          "/images/products/men/t-shirt/p880/P880horizonBlue_7.webp"
+        ],
+        "sizes": {
+          "S": 9,
+          "M": 15,
+          "L": 21,
+          "XL": 9,
+          "XXL": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "men-navy-white-performance-tshirt",
+    "name": "Men Navy White Performance T-Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "T-shirt",
+    "gender": "men",
+    "collections": [
+      "new-arrivals",
+      "best-sellers"
+    ],
+    "price": 649,
+    "oldPrice": 949,
+    "discount": "32% OFF",
+    "currency": "₹",
+    "rating": 4.5,
+    "reviews": 104,
+    "sold": 231,
+    "stock": 73,
+    "fit": "Regular Fit",
+    "fabric": "100% Polyester",
+    "productDetails": "A versatile performance T-shirt with a sporty colour combination and lightweight fabric. Perfect for training sessions, outdoor activities and everyday casual styling.",
+    "colors": [
+      {
+        "name": "Navy Blue",
+        "images": [
+          "/images/products/men/t-shirt/qr10/OR10NavyB_1.webp",
+          "/images/products/men/t-shirt/qr10/OR10NavyB_2.webp",
+          "/images/products/men/t-shirt/qr10/OR10NavyB_3.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 16,
+          "L": 22,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "White",
+        "images": [
+          "/images/products/men/t-shirt/qr10/OR10_20White__1_38670f9e-3018-4d32-a810-b5c767d01c63.webp",
+          "/images/products/men/t-shirt/qr10/OR10_20White__2_db4ab163-e28d-49a3-b7ae-44407fa522fc.webp",
+          "/images/products/men/t-shirt/qr10/OR10_20White__5_163b3a71-d1c0-47d7-9c41-9f7e4b32c6db.webp",
+          "/images/products/men/t-shirt/qr10/OR10_20White__6_c6304ba7-7724-488b-8437-7ddb84a156e7.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 14,
+          "L": 20,
+          "XL": 8,
+          "XXL": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "men-capri-blue-fig-light-grey-shirt",
+    "name": "Men Casual Comfort Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "Shirt",
+    "gender": "men",
+    "collections": [
+      "new-arrivals",
+      "best-sellers"
+    ],
+    "price": 899,
+    "oldPrice": 1299,
+    "discount": "31% OFF",
+    "currency": "₹",
+    "rating": 4.5,
+    "reviews": 118,
+    "sold": 286,
+    "stock": 74,
+    "fit": "Regular Fit",
+    "fabric": "Cotton Blend",
+    "productDetails": "Upgrade your everyday wardrobe with this stylish men's casual shirt. Designed with a comfortable regular fit and lightweight fabric, it is perfect for everyday outings, casual occasions and warm-weather styling.",
+    "colors": [
+      {
+        "name": "Capri Blue",
+        "images": [
+          "/images/products/men/shirt/p752/P752CAPRIBLUE_1_1c88c2f7-e87e-411e-a3ec-dc76e20a3e5f.jpg",
+          "/images/products/men/shirt/p752/P752CAPRIBLUE_2_20b89456-5653-461f-a71b-ff43b1cfe8c8.webp",
+          "/images/products/men/shirt/p752/P752CAPRIBLUE_3_ca2b375d-c1f0-4108-956d-c2ffc2e99f66.webp",
+          "/images/products/men/shirt/p752/P752CAPRIBLUE_4_fadbfdc7-12c9-4bc2-92d7-533f46d46c20.webp",
+          "/images/products/men/shirt/p752/P752CAPRIBLUE_5_77c888b9-b6a8-474f-bc60-c228dfb4b059.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 15,
+          "L": 20,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Fig",
+        "images": [
+          "/images/products/men/shirt/p752/P752FIG_2_fcd60a3d-172e-4eca-84cf-3759c97e56c8.jpg",
+          "/images/products/men/shirt/p752/P752FIG_3_8dd00e36-d454-4152-8111-8e86133bc0d5.webp",
+          "/images/products/men/shirt/p752/P752FIG_4_67565a96-93bc-4a32-a322-24c0d9ff0ca1.webp",
+          "/images/products/men/shirt/p752/P752FIG_5_f1325fd3-9ce7-4de4-a40e-1c1d517e86f7.webp"
+        ],
+        "sizes": {
+          "S": 7,
+          "M": 14,
+          "L": 18,
+          "XL": 9,
+          "XXL": 4
+        }
+      },
+      {
+        "name": "Light Grey",
+        "images": [
+          "/images/products/men/shirt/p752/P752LightGrey_1.webp",
+          "/images/products/men/shirt/p752/P752LightGrey_2.webp",
+          "/images/products/men/shirt/p752/P752LightGrey_3.webp",
+          "/images/products/men/shirt/p752/P752LightGrey_4.webp",
+          "/images/products/men/shirt/p752/P752LightGrey_5.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 17,
+          "L": 22,
+          "XL": 11,
+          "XXL": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "men-grape-vine-light-navy-stone-grey-shirt",
+    "name": "Men Modern Casual Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "Shirt",
+    "gender": "men",
+    "collections": [
+      "summer-collection",
+      "trending-now"
+    ],
+    "price": 949,
+    "oldPrice": 1399,
+    "discount": "32% OFF",
+    "currency": "₹",
+    "rating": 4.6,
+    "reviews": 132,
+    "sold": 319,
+    "stock": 81,
+    "fit": "Regular Fit",
+    "fabric": "Cotton Blend",
+    "productDetails": "A versatile men's casual shirt designed for effortless everyday styling. The comfortable fabric and regular fit make it suitable for casual gatherings, travel and relaxed weekend looks.",
+    "colors": [
+      {
+        "name": "Grape Vine",
+        "images": [
+          "/images/products/men/shirt/p822/P822GrapeVine_1.webp",
+          "/images/products/men/shirt/p822/P822GrapeVine_2.webp",
+          "/images/products/men/shirt/p822/P822GrapeVine_3.webp",
+          "/images/products/men/shirt/p822/P822GrapeVine_4.webp",
+          "/images/products/men/shirt/p822/P822GrapeVine_5.webp"
+        ],
+        "sizes": {
+          "S": 9,
+          "M": 16,
+          "L": 21,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Light Navy",
+        "images": [
+          "/images/products/men/shirt/p822/P822LightNavy_1.webp",
+          "/images/products/men/shirt/p822/P822LightNavy_2.webp",
+          "/images/products/men/shirt/p822/P822LightNavy_3.webp",
+          "/images/products/men/shirt/p822/P822LightNavy_4.webp",
+          "/images/products/men/shirt/p822/P822LightNavy_5.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 15,
+          "L": 20,
+          "XL": 9,
+          "XXL": 4
+        }
+      },
+      {
+        "name": "Stone Grey",
+        "images": [
+          "/images/products/men/shirt/p822/P822Stonegrey_1.webp",
+          "/images/products/men/shirt/p822/P822Stonegrey_2.webp",
+          "/images/products/men/shirt/p822/P822Stonegrey_3.webp",
+          "/images/products/men/shirt/p822/P822Stonegrey_4.webp",
+          "/images/products/men/shirt/p822/P822Stonegrey_5.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 18,
+          "L": 23,
+          "XL": 10,
+          "XXL": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "men-navy-powder-blue-shirt",
+    "name": "Men Classic Navy Casual Shirt",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "Shirt",
+    "gender": "men",
+    "collections": [
+      "best-sellers",
+      "new-arrivals"
+    ],
+    "price": 999,
+    "oldPrice": 1499,
+    "discount": "33% OFF",
+    "currency": "₹",
+    "rating": 4.7,
+    "reviews": 156,
+    "sold": 372,
+    "stock": 92,
+    "fit": "Regular Fit",
+    "fabric": "Cotton Blend",
+    "productDetails": "A timeless casual shirt featuring a clean silhouette and comfortable fabric. Easy to pair with jeans, chinos or shorts, making it a versatile addition to your everyday wardrobe.",
+    "colors": [
+      {
+        "name": "Navy",
+        "images": [
+          "/images/products/men/shirt/p823/P823Navy_1_edda362c-992c-4c8c-ba4b-59bf7711dd04.webp",
+          "/images/products/men/shirt/p823/P823Navy_2_ab1b0e49-8933-4cab-8b69-bd72518ebf43.webp",
+          "/images/products/men/shirt/p823/P823Navy_3_f8782296-b82b-4ff6-9f3e-1740783614f9.webp",
+          "/images/products/men/shirt/p823/P823Navy_4_ac3f1132-a289-4cde-80ae-bb6798f9ade7.webp",
+          "/images/products/men/shirt/p823/P823Navy_5_e26dafc6-30f2-44fb-b69e-30e1c856fc88.webp"
+        ],
+        "sizes": {
+          "S": 12,
+          "M": 20,
+          "L": 25,
+          "XL": 12,
+          "XXL": 6
+        }
+      },
+      {
+        "name": "Powder Blue",
+        "images": [
+          "/images/products/men/shirt/p823/P823PowderBlue_1.webp",
+          "/images/products/men/shirt/p823/P823PowderBlue_2.webp",
+          "/images/products/men/shirt/p823/P823PowderBlue_3.webp",
+          "/images/products/men/shirt/p823/P823PowderBlue_4.webp",
+          "/images/products/men/shirt/p823/P823PowderBlue_5.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 18,
+          "L": 22,
+          "XL": 10,
+          "XXL": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "men-gulf-coast-navy-trekking-green-trackpant",
+    "name": "Men Performance Trackpant",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "Trackpant",
+    "gender": "men",
+    "collections": [
+      "best-sellers",
+      "trending-now"
+    ],
+    "price": 899,
+    "oldPrice": 1299,
+    "discount": "31% OFF",
+    "currency": "₹",
+    "rating": 4.6,
+    "reviews": 124,
+    "sold": 287,
+    "stock": 82,
+    "fit": "Regular Fit",
+    "fabric": "Polyester Blend",
+    "productDetails": "Designed for active lifestyles, this men's performance trackpant delivers lightweight comfort, easy movement and a sporty everyday look. Perfect for workouts, running, travel and casual wear.",
+    "colors": [
+      {
+        "name": "Gulf Coast",
+        "images": [
+          "/images/products/men/trackpant/p900/P900GulfCoast-01.webp",
+          "/images/products/men/trackpant/p900/P900GulfCoast-02.webp",
+          "/images/products/men/trackpant/p900/P900GulfCoast-03.webp",
+          "/images/products/men/trackpant/p900/P900GulfCoast-04.jpg",
+          "/images/products/men/trackpant/p900/P900GulfCoast-05.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 16,
+          "L": 22,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Navy",
+        "images": [
+          "/images/products/men/trackpant/p900/P900Navy_1.webp",
+          "/images/products/men/trackpant/p900/P900Navy_2.webp",
+          "/images/products/men/trackpant/p900/P900Navy_3.webp",
+          "/images/products/men/trackpant/p900/P900Navy_4.webp",
+          "/images/products/men/trackpant/p900/P900Navy_5.webp"
+        ],
+        "sizes": {
+          "S": 12,
+          "M": 18,
+          "L": 24,
+          "XL": 12,
+          "XXL": 6
+        }
+      },
+      {
+        "name": "Trekking Green",
+        "images": [
+          "/images/products/men/trackpant/p900/P900TrekkingGreen_1.webp",
+          "/images/products/men/trackpant/p900/P900TrekkingGreen_2.webp",
+          "/images/products/men/trackpant/p900/P900TrekkingGreen_3.webp",
+          "/images/products/men/trackpant/p900/P900TrekkingGreen_4.webp"
+        ],
+        "sizes": {
+          "S": 8,
+          "M": 15,
+          "L": 20,
+          "XL": 9,
+          "XXL": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "men-black-khaki-navy-trackpant",
+    "name": "Men Everyday Comfort Trackpant",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "Trackpant",
+    "gender": "men",
+    "collections": [
+      "new-arrivals",
+      "trending-now"
+    ],
+    "price": 849,
+    "oldPrice": 1249,
+    "discount": "32% OFF",
+    "currency": "₹",
+    "rating": 4.5,
+    "reviews": 109,
+    "sold": 251,
+    "stock": 76,
+    "fit": "Regular Fit",
+    "fabric": "Polyester Blend",
+    "productDetails": "A versatile everyday trackpant designed with a comfortable fit and lightweight fabric. Ideal for training, walking, travel and relaxed casual styling.",
+    "colors": [
+      {
+        "name": "Black",
+        "images": [
+          "/images/products/men/trackpant/p936/P936Black_01.webp",
+          "/images/products/men/trackpant/p936/P936Black_02.webp",
+          "/images/products/men/trackpant/p936/P936Black_03.webp",
+          "/images/products/men/trackpant/p936/P936Black_04.webp"
+        ],
+        "sizes": {
+          "S": 12,
+          "M": 18,
+          "L": 25,
+          "XL": 12,
+          "XXL": 6
+        }
+      },
+      {
+        "name": "Khaki",
+        "images": [
+          "/images/products/men/trackpant/p936/P936Khaki_01.webp",
+          "/images/products/men/trackpant/p936/P936Khaki_02.webp",
+          "/images/products/men/trackpant/p936/P936Khaki_03.webp",
+          "/images/products/men/trackpant/p936/P936Khaki_04.webp"
+        ],
+        "sizes": {
+          "S": 9,
+          "M": 15,
+          "L": 21,
+          "XL": 10,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Navy Blue",
+        "images": [
+          "/images/products/men/trackpant/p936/P936NavyB_1.webp",
+          "/images/products/men/trackpant/p936/P936NavyB_2.webp",
+          "/images/products/men/trackpant/p936/P936NavyB_3.webp",
+          "/images/products/men/trackpant/p936/P936NavyB_4.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 17,
+          "L": 23,
+          "XL": 11,
+          "XXL": 5
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "slug": "men-black-blue-stone-smokey-olive-trackpant",
+    "name": "Men Active Sports Trackpant",
+    "brand": "FabTech",
+    "category": "men",
+    "subCategory": "Trackpant",
+    "gender": "men",
+    "collections": [
+      "best-sellers",
+      "trending-now"
+    ],
+    "price": 929,
+    "oldPrice": 1399,
+    "discount": "34% OFF",
+    "currency": "₹",
+    "rating": 4.7,
+    "reviews": 137,
+    "sold": 346,
+    "stock": 94,
+    "fit": "Regular Fit",
+    "fabric": "Polyester Blend",
+    "productDetails": "Stay ready for every activity with this men's active sports trackpant. Its lightweight construction and comfortable fit provide freedom of movement for training, running and everyday activities.",
+    "colors": [
+      {
+        "name": "Black",
+        "images": [
+          "/images/products/men/trackpant/qr39/OR39Black_1.webp",
+          "/images/products/men/trackpant/qr39/OR39Black_2.webp",
+          "/images/products/men/trackpant/qr39/OR39Black_3.webp",
+          "/images/products/men/trackpant/qr39/OR39Black_4.webp",
+          "/images/products/men/trackpant/qr39/OR39Black_5.webp"
+        ],
+        "sizes": {
+          "S": 12,
+          "M": 20,
+          "L": 27,
+          "XL": 13,
+          "XXL": 6
+        }
+      },
+      {
+        "name": "Blue Stone",
+        "images": [
+          "/images/products/men/trackpant/qr39/OR39BLUESTONE-02.webp",
+          "/images/products/men/trackpant/qr39/OR39BLUESTONE-03.webp",
+          "/images/products/men/trackpant/qr39/OR39BLUESTONE-04.jpg",
+          "/images/products/men/trackpant/qr39/OR39BLUESTONE-05.webp"
+        ],
+        "sizes": {
+          "S": 9,
+          "M": 17,
+          "L": 23,
+          "XL": 11,
+          "XXL": 5
+        }
+      },
+      {
+        "name": "Smokey Olive",
+        "images": [
+          "/images/products/men/trackpant/qr39/OR39SmokeyOlive_1.webp",
+          "/images/products/men/trackpant/qr39/OR39SmokeyOlive_2.webp",
+          "/images/products/men/trackpant/qr39/OR39SmokeyOlive_3.webp",
+          "/images/products/men/trackpant/qr39/OR39SmokeyOlive_4.webp",
+          "/images/products/men/trackpant/qr39/OR39SmokeyOlive_5.webp"
+        ],
+        "sizes": {
+          "S": 10,
+          "M": 18,
+          "L": 24,
+          "XL": 12,
+          "XXL": 6
+        }
+      }
+    ]
+  }
+]

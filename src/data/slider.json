@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Performance Meets Style",
+        "subtitle": "NEW COLLECTION",
+        "description": "Premium sportswear designed for your performance.",
+        "buttonText": "SHOP MEN",
+        "buttonLink": "/category/men",
+        "image": "http://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+        "id": 2,
+        "title": "Train. Perform. Repeat.",
+        "subtitle": "ASTRIKE SPORTS",
+        "description": "Built for athletes who never stop.",
+        "buttonText": "SHOP NOW",
+        "buttonLink": "/category/men",
+        "image": "https://images.pexels.com/photos/9775860/pexels-photo-9775860.jpeg?_gl=1*uynn7t*_ga*MTA3MzkxODY1OS4xNzg2ODkwNzEw*_ga_8JE65Q40S6*czE3ODY4OTA3MDkkbzEkZzEkdDE3ODY4OTA4NzUkajI1JGwwJGgw"
+    },
+
+    {
+    "id": 3,
+    "title": "Push Beyond Your Limits.",
+    "subtitle": "BUILT FOR PERFORMANCE",
+    "description": "Engineered for every workout, every challenge, and every goal.",
+    "buttonText": "SHOP NOW",
+    "buttonLink": "/category/men",
+    "image": "https://images.pexels.com/photos/7319143/pexels-photo-7319143.jpeg?_gl=1*1gcazjr*_ga*MTA3MzkxODY1OS4xNzg2ODkwNzEw*_ga_8JE65Q40S6*czE3ODY4OTU3OTAkbzIkZzEkdDE3ODY4OTU4NTckajU5JGwwJGgw"
+}
+]

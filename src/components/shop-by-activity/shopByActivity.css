@@ -1,0 +1,724 @@
+/* ========================================
+   SHOP BY SUB CATEGORY
+======================================== */
+
+.shop-activity-section {
+    width: 100%;
+    padding: 55px 0 60px;
+    overflow: hidden;
+    background: #fff;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.shop-activity-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.shop-activity-header .section-label {
+    display: block;
+
+    font-size: 50px;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+
+    color: black;
+
+    margin-bottom: 12px;
+}
+
+
+/* ========================================
+   SUB CATEGORY TABS
+======================================== */
+
+.shop-activity-tabs {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    overflow-x: auto;
+
+    scrollbar-width: none;
+}
+
+
+.shop-activity-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+
+.shop-activity-tab {
+    position: relative;
+
+    padding: 5px 2px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #777;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.25s ease;
+}
+
+
+.shop-activity-tab:hover {
+    color: #111;
+}
+
+
+.shop-activity-tab.active {
+    color: #111;
+}
+
+
+.shop-activity-tab.active::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: -5px;
+
+    height: 2px;
+
+    background: #111;
+}
+
+
+/* ========================================
+   CAROUSEL
+======================================== */
+
+.shop-activity-carousel {
+    position: relative;
+
+    width: 75%;
+
+    height: 465px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    perspective: 1400px;
+
+    margin: auto;
+}
+
+
+/* ========================================
+   TRACK WRAPPER
+======================================== */
+
+.shop-activity-track-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    max-width: 1450px;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    perspective: 1400px;
+}
+
+
+/* ========================================
+   TRACK
+======================================== */
+
+.shop-activity-track {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    transform-style: preserve-3d;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.shop-activity-card {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 285px;
+
+    margin-left: -142px;
+    margin-top: -190px;
+
+
+    cursor: pointer;
+
+    user-select: none;
+
+    transform-origin: center center;
+
+    transform-style: preserve-3d;
+
+    transition:
+        transform 0.5s cubic-bezier(0.22,
+            0.61,
+            0.36,
+            1),
+        filter 0.4s ease;
+
+    will-change: transform;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.shop-activity-image {
+    width: 285px;
+    height: 380px;
+
+    overflow: hidden;
+
+    background: #f5f5f5;
+   
+    border-radius: 15px;
+
+    /*
+       Premium subtle border
+    */
+    border: 1px solid #dedede;
+
+    /*
+       Soft premium shadow
+    */
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08),
+        0 20px 45px rgba(0, 0, 0, 0.06);
+
+    transition:
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+.shop-activity-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+/* ========================================
+   IMAGE HOVER
+======================================== */
+
+.shop-activity-card:hover .shop-activity-image img {
+    transform: scale(1.04);
+}
+
+
+/* ========================================
+   CARD HOVER
+======================================== */
+
+.shop-activity-card:hover .shop-activity-image {
+
+    border-color: #c8c8c8;
+
+    box-shadow:
+        0 12px 28px rgba(0, 0, 0, 0.10),
+        0 25px 55px rgba(0, 0, 0, 0.09);
+}
+
+
+/* ========================================
+   ACTIVE / CENTER CARD
+======================================== */
+
+.shop-activity-card.active {
+    z-index: 20;
+}
+
+
+.shop-activity-card.active .shop-activity-image {
+
+    width: 315px;
+
+    height: 420px;
+
+    margin-left: -15px;
+
+    border: 1px solid #cfcfcf;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12),
+        0 30px 65px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ========================================
+   ACTIVE CARD HOVER
+======================================== */
+
+.shop-activity-card.active:hover .shop-activity-image {
+
+    border-color: #bdbdbd;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.14),
+        0 35px 75px rgba(0, 0, 0, 0.13);
+}
+
+
+/* ========================================
+   SIDE CARDS
+======================================== */
+
+/*
+   IMPORTANT:
+   Opacity remove kar di gayi hai.
+   Har card 100% visible rahega.
+*/
+
+.shop-activity-card.near {
+    filter: none;
+}
+
+
+.shop-activity-card.far {
+    filter: none;
+}
+
+
+/* ========================================
+   PRODUCT NAME
+======================================== */
+
+.shop-activity-name {
+    width: 100%;
+
+    margin-top: 13px;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    line-height: 20px;
+
+    color: #111;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ========================================
+   NAVIGATION BUTTON
+======================================== */
+
+.shop-activity-btn {
+    position: absolute;
+
+    top: 50%;
+
+    width: 44px;
+    height: 44px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    color: #111;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    z-index: 30;
+
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.08);
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.shop-activity-btn:hover {
+
+    background: #111;
+
+    border-color: #111;
+
+    color: #fff;
+
+    transform:
+        translateY(-50%) scale(1.06);
+
+    box-shadow:
+        0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ========================================
+   BUTTON POSITION
+======================================== */
+
+.shop-activity-prev {
+    left: 18px;
+}
+
+
+.shop-activity-next {
+    right: 18px;
+}
+
+
+/* ========================================
+   EMPTY
+======================================== */
+
+.shop-activity-empty {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ========================================
+   EXTRA LARGE DESKTOP
+======================================== */
+
+@media (min-width: 1500px) {
+
+    .shop-activity-track-wrapper {
+        max-width: 1500px;
+    }
+
+
+    .shop-activity-card {
+
+        width: 295px;
+
+        margin-left: -147px;
+
+        margin-top: -195px;
+    }
+
+
+    .shop-activity-image {
+
+        width: 295px;
+
+        height: 395px;
+    }
+
+
+    .shop-activity-card.active .shop-activity-image {
+
+        width: 325px;
+
+        height: 430px;
+
+        margin-left: -15px;
+    }
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+======================================== */
+
+@media (min-width: 1201px) {
+
+    .shop-activity-track-wrapper {
+        max-width: 1450px;
+    }
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .shop-activity-section {
+        padding: 45px 0 50px;
+    }
+
+
+    .shop-activity-carousel {
+
+        width: 90%;
+
+        height: 410px;
+    }
+
+
+    .shop-activity-track-wrapper {
+        max-width: 1000px;
+    }
+
+
+    .shop-activity-card {
+
+        width: 230px;
+
+        margin-left: -115px;
+
+        margin-top: -155px;
+    }
+
+
+    .shop-activity-image {
+
+        width: 230px;
+
+        height: 305px;
+    }
+
+
+    .shop-activity-card.active .shop-activity-image {
+
+        width: 255px;
+
+        height: 335px;
+
+        margin-left: -12px;
+    }
+
+
+    .shop-activity-btn {
+
+        width: 40px;
+
+        height: 40px;
+    }
+
+
+    .shop-activity-prev {
+        left: 12px;
+    }
+
+
+    .shop-activity-next {
+        right: 12px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .shop-activity-section {
+        padding: 40px 0;
+    }
+
+
+    .shop-activity-header {
+        margin-bottom: 25px;
+    }
+
+
+    .shop-activity-tabs {
+
+        justify-content: flex-start;
+
+        gap: 22px;
+
+        padding: 0 20px;
+    }
+
+
+    .shop-activity-tab {
+        font-size: 13px;
+    }
+
+
+    .shop-activity-carousel {
+
+        width: 100%;
+
+        height: 315px;
+    }
+
+
+    .shop-activity-track-wrapper {
+        max-width: 100%;
+    }
+
+
+    .shop-activity-card {
+
+        width: 145px;
+
+        margin-left: -72px;
+
+        margin-top: -110px;
+    }
+
+
+    .shop-activity-image {
+
+        width: 145px;
+
+        height: 195px;
+
+        border-radius: 12px;
+    }
+
+
+    .shop-activity-card.active .shop-activity-image {
+
+        width: 170px;
+
+        height: 220px;
+
+        margin-left: -12px;
+    }
+
+
+    .shop-activity-name {
+
+        margin-top: 8px;
+
+        font-size: 12px;
+
+        line-height: 17px;
+    }
+
+
+    .shop-activity-btn {
+
+        width: 34px;
+
+        height: 34px;
+
+        font-size: 16px;
+    }
+
+
+    .shop-activity-prev {
+        left: 7px;
+    }
+
+
+    .shop-activity-next {
+        right: 7px;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+    .shop-activity-carousel {
+        height: 285px;
+    }
+
+
+    .shop-activity-card {
+
+        width: 130px;
+
+        margin-left: -65px;
+
+        margin-top: -100px;
+    }
+
+
+    .shop-activity-image {
+
+        width: 130px;
+
+        height: 180px;
+
+        border-radius: 10px;
+    }
+
+
+    .shop-activity-card.active .shop-activity-image {
+
+        width: 150px;
+
+        height: 205px;
+
+        margin-left: -10px;
+    }
+
+
+    .shop-activity-btn {
+
+        width: 32px;
+
+        height: 32px;
+    }
+}

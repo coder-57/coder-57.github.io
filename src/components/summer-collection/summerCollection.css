@@ -1,0 +1,956 @@
+/* ========================================
+   ASTRIKE SPORTS
+   SUMMER COLLECTION
+======================================== */
+
+
+/* ========================================
+   SECTION
+======================================== */
+
+.summer-collection-section {
+    width: 100%;
+
+    padding: 55px 4.5% 65px;
+
+    box-sizing: border-box;
+
+    background: #fff;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.summer-collection-header {
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.summer-collection-title {
+    min-width: 0;
+}
+
+
+.summer-collection-title
+.section-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 11px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 2.3px;
+
+    color: #777;
+
+    text-transform: uppercase;
+}
+
+
+.summer-collection-title h2 {
+    margin: 0;
+
+    font-size: 34px;
+
+    line-height: 1.15;
+
+    font-weight: 750;
+
+    letter-spacing: -0.7px;
+
+    color: #111;
+}
+
+
+/* ========================================
+   VIEW ALL
+======================================== */
+
+.summer-collection-header
+.view-all {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 0 4px;
+
+    color: #111;
+
+    font-size: 13px;
+
+    font-weight: 650;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.summer-collection-header
+.view-all:hover {
+    opacity: 0.6;
+
+    transform: translateX(3px);
+}
+
+
+/* ========================================
+   SLIDER WRAPPER
+======================================== */
+
+.summer-collection-slider-wrapper {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.summer-collection-slider {
+    width: 100%;
+
+    display: grid;
+
+    grid-auto-flow: column;
+
+    grid-auto-columns:
+        calc(
+            (100% - 72px) / 5
+        );
+
+    gap: 18px;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+
+    padding: 4px 4px 12px;
+
+    box-sizing: border-box;
+}
+
+
+.summer-collection-slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ========================================
+   PRODUCT CARD
+   SQUARE CORNERS
+======================================== */
+
+.summer-collection-card {
+    width: 100%;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    scroll-snap-align: start;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+.summer-collection-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* ========================================
+   PRODUCT IMAGE
+======================================== */
+
+.summer-collection-image {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1.22;
+
+    overflow: hidden;
+
+    background: #f4f4f4;
+
+    border-radius: 0;
+
+    text-decoration: none;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.summer-collection-image img {
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.55s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        );
+}
+
+
+/* ========================================
+   IMAGE HOVER
+======================================== */
+
+.summer-collection-card:hover
+.summer-collection-image img {
+    transform: scale(1.055);
+}
+
+
+/* ========================================
+   PRODUCT INFO
+======================================== */
+
+.summer-collection-info {
+    width: 100%;
+
+    padding: 13px 2px 5px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   PRODUCT NAME
+   ONE LINE + ...
+======================================== */
+
+.summer-collection-info h3 {
+    width: 100%;
+
+    display: block;
+
+    margin: 0 0 7px;
+
+    padding: 0;
+
+    font-size: 14px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    letter-spacing: -0.1px;
+
+    color: #171717;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ========================================
+   PRICE
+   NEW PRICE ONLY
+======================================== */
+
+.summer-collection-info
+.product-price {
+    width: 100%;
+
+    min-height: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 0;
+
+    padding: 0;
+}
+
+
+.summer-collection-info
+.product-price strong {
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    font-weight: 750;
+
+    letter-spacing: -0.2px;
+
+    color: #111;
+}
+
+
+/* ========================================
+   HIDE EXTRA INFORMATION
+======================================== */
+
+.summer-collection-card
+.product-brand,
+
+.summer-collection-card
+.product-rating,
+
+.summer-collection-card
+.old-price,
+
+.summer-collection-card
+.discount,
+
+.summer-collection-card
+.discount-badge,
+
+.summer-collection-card
+del {
+    display: none !important;
+}
+
+
+/* ========================================
+   SLIDER BUTTONS
+======================================== */
+
+.summer-collection-section
+.slider-btn {
+    position: absolute;
+
+    z-index: 10;
+
+    top: 50%;
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #ddd;
+
+    border-radius: 50%;
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.96
+    );
+
+    color: #111;
+
+    font-size: 19px;
+
+    line-height: 1;
+
+    font-weight: 400;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 18px rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+
+    transform:
+        translateY(-50%);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+/* ========================================
+   PREVIOUS
+======================================== */
+
+.summer-collection-prev {
+    left: -22px;
+}
+
+
+/* ========================================
+   NEXT
+======================================== */
+
+.summer-collection-next {
+    right: -22px;
+}
+
+
+/* ========================================
+   BUTTON HOVER
+======================================== */
+
+.summer-collection-section
+.slider-btn:hover:not(:disabled) {
+
+    background: #111;
+
+    color: #fff;
+
+    border-color: #111;
+
+    transform:
+        translateY(-50%)
+        scale(1.05);
+}
+
+
+/* ========================================
+   DISABLED BUTTON
+======================================== */
+
+.summer-collection-section
+.slider-btn:disabled {
+
+    cursor: default;
+
+    opacity: 0.45;
+
+    box-shadow: none;
+}
+
+
+/* ========================================
+   EMPTY
+======================================== */
+
+.summer-collection-empty {
+    width: 100%;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.summer-collection-empty
+.section-label {
+    margin-bottom: 10px;
+}
+
+
+.summer-collection-empty h2 {
+    margin: 0 0 10px;
+
+    font-size: 28px;
+
+    color: #111;
+}
+
+
+.summer-collection-empty p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+   1400px+
+======================================== */
+
+@media (min-width: 1400px) {
+
+    .summer-collection-section {
+        padding-left: 4%;
+
+        padding-right: 4%;
+    }
+
+
+    .summer-collection-slider {
+        grid-auto-columns:
+            calc(
+                (100% - 80px) / 5
+            );
+
+        gap: 20px;
+    }
+
+
+    .summer-collection-info h3 {
+        font-size: 15px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .summer-collection-info
+    .product-price strong {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ========================================
+   TABLET / LAPTOP
+   769px - 1100px
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .summer-collection-section {
+        padding: 45px 4% 55px;
+    }
+
+
+    .summer-collection-title h2 {
+        font-size: 31px;
+    }
+
+
+    .summer-collection-slider {
+        grid-auto-columns:
+            calc(
+                (100% - 36px) / 3
+            );
+
+        gap: 18px;
+    }
+
+
+    .summer-collection-image {
+        aspect-ratio: 1 / 1.2;
+    }
+
+
+    .summer-collection-section
+    .slider-btn {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 17px;
+    }
+
+
+    .summer-collection-prev {
+        left: -19px;
+    }
+
+
+    .summer-collection-next {
+        right: -19px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+   <= 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+    .summer-collection-section {
+        padding: 35px 14px 45px;
+    }
+
+
+    /* HEADER */
+
+    .summer-collection-header {
+        align-items: flex-end;
+
+        margin-bottom: 22px;
+    }
+
+
+    /* LABEL */
+
+    .summer-collection-title
+    .section-label {
+
+        margin-bottom: 7px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    /* TITLE */
+
+    .summer-collection-title h2 {
+        font-size: 27px;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    /* VIEW ALL */
+
+    .summer-collection-header
+    .view-all {
+
+        font-size: 12px;
+
+        min-height: 34px;
+    }
+
+
+    /* SLIDER */
+
+    .summer-collection-slider {
+
+        grid-auto-columns:
+            calc(
+                (100% - 12px) / 2
+            );
+
+        gap: 12px;
+
+        padding:
+            3px
+            3px
+            10px;
+    }
+
+
+    /* IMAGE */
+
+    .summer-collection-image {
+
+        aspect-ratio: 1 / 1.2;
+
+        border-radius: 0;
+    }
+
+
+    /* CARD */
+
+    .summer-collection-card {
+
+        border-radius: 0;
+    }
+
+
+    /* INFO */
+
+    .summer-collection-info {
+
+        padding: 10px 1px 3px;
+    }
+
+
+    /* PRODUCT NAME */
+
+    .summer-collection-info h3 {
+
+        width: 100%;
+
+        font-size: 13px;
+
+        line-height: 1.35;
+
+        margin: 0 0 5px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* PRICE */
+
+    .summer-collection-info
+    .product-price strong {
+
+        font-size: 15px;
+    }
+
+
+    /* BUTTONS */
+
+    .summer-collection-section
+    .slider-btn {
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 15px;
+    }
+
+
+    .summer-collection-prev {
+        left: -8px;
+    }
+
+
+    .summer-collection-next {
+        right: -8px;
+    }
+
+
+    /* MOBILE HOVER */
+
+    .summer-collection-card:hover {
+
+        transform: none;
+    }
+
+
+    .summer-collection-card:hover
+    .summer-collection-image img {
+
+        transform: none;
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   <= 420px
+======================================== */
+
+@media (max-width: 420px) {
+
+    .summer-collection-section {
+
+        padding:
+            30px
+            10px
+            40px;
+    }
+
+
+    .summer-collection-title h2 {
+
+        font-size: 24px;
+    }
+
+
+    .summer-collection-header
+    .view-all {
+
+        font-size: 11px;
+    }
+
+
+    .summer-collection-slider {
+
+        grid-auto-columns:
+            calc(
+                (100% - 10px) / 2
+            );
+
+        gap: 10px;
+    }
+
+
+    .summer-collection-image {
+
+        aspect-ratio: 1 / 1.18;
+
+        border-radius: 0;
+    }
+
+
+    .summer-collection-card {
+
+        border-radius: 0;
+    }
+
+
+    .summer-collection-info {
+
+        padding-top: 9px;
+    }
+
+
+    .summer-collection-info h3 {
+
+        width: 100%;
+
+        font-size: 12px;
+
+        margin: 0 0 5px;
+
+        line-height: 1.35;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .summer-collection-info
+    .product-price strong {
+
+        font-size: 14px;
+    }
+
+
+    .summer-collection-section
+    .slider-btn {
+
+        width: 32px;
+
+        height: 32px;
+
+        font-size: 13px;
+    }
+
+
+    .summer-collection-prev {
+        left: -5px;
+    }
+
+
+    .summer-collection-next {
+        right: -5px;
+    }
+
+}
+
+
+/* ========================================
+   VERY SMALL MOBILE
+   <= 360px
+======================================== */
+
+@media (max-width: 360px) {
+
+    .summer-collection-section {
+
+        padding-left: 8px;
+
+        padding-right: 8px;
+    }
+
+
+    .summer-collection-title h2 {
+
+        font-size: 22px;
+    }
+
+
+    .summer-collection-slider {
+
+        gap: 8px;
+
+        grid-auto-columns:
+            calc(
+                (100% - 8px) / 2
+            );
+    }
+
+
+    .summer-collection-info h3 {
+
+        width: 100%;
+
+        font-size: 11.5px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .summer-collection-info
+    .product-price strong {
+
+        font-size: 13px;
+    }
+
+}

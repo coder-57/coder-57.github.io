@@ -1,0 +1,358 @@
+/* ==================================================
+   CATEGORY SECTION
+================================================== */
+
+.category-section {
+    width: 100%;
+    padding: 55px 30px;
+    background: #ffffff;
+}
+
+
+/* ==================================================
+   CATEGORY CONTAINER
+================================================== */
+
+.category-container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* ==================================================
+   CATEGORY HEADING
+================================================== */
+
+.category-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+
+/* ==================================================
+   SMALL HEADING
+================================================== */
+
+.category-heading p {
+    margin: 0 0 7px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #777;
+    text-transform: uppercase;
+}
+
+
+/* ==================================================
+   MAIN HEADING
+================================================== */
+
+.category-heading h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #111;
+    text-transform: uppercase;
+}
+
+
+/* ==================================================
+   CATEGORY GRID
+   DESKTOP = 5 CARDS IN ONE ROW
+================================================== */
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+
+/* ==================================================
+   CATEGORY CARD
+================================================== */
+
+.category-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    background: #eeeeee;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+
+/* ==================================================
+   CATEGORY IMAGE
+================================================== */
+
+.category-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+
+/* ==================================================
+   DARK OVERLAY
+================================================== */
+
+.category-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.03) 20%,
+            rgba(0, 0, 0, 0.75) 100%
+        );
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* ==================================================
+   CATEGORY CONTENT
+================================================== */
+
+.category-content {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+
+/* ==================================================
+   CATEGORY NAME
+================================================== */
+
+.category-content h3 {
+    margin: 0 0 5px;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+
+/* ==================================================
+   SHOP NOW
+================================================== */
+
+.category-content span {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+
+/* ==================================================
+   HOVER
+================================================== */
+
+.category-card:hover .category-image img {
+    transform: scale(1.05);
+}
+
+
+.category-card:hover .category-content {
+    transform: translateY(-3px);
+}
+
+
+/* ==================================================
+   TABLET + MOBILE
+   CATEGORY BECOMES HORIZONTAL SLIDER
+================================================== */
+
+@media (max-width: 900px) {
+
+    .category-section {
+        padding: 48px 20px;
+    }
+
+
+    .category-container {
+        max-width: 100%;
+    }
+
+
+    .category-grid {
+
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 8px;
+        /* Hide scrollbar */
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+
+    .category-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    /* ==================================================
+       SLIDER CARD
+    ================================================== */
+
+    .category-card {
+
+        flex: 0 0 180px;
+        width: 180px;
+        height: 220px;
+        scroll-snap-align: start;
+        border-radius: 3px;
+    }
+
+
+    .category-content {
+        left: 13px;
+        right: 13px;
+        bottom: 13px;
+    }
+
+
+    .category-content h3 {
+        font-size: 17px;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .category-section {
+        padding: 40px 15px;
+    }
+
+
+    .category-heading {
+        margin-bottom: 22px;
+    }
+
+
+    .category-heading p {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .category-heading h2 {
+        font-size: 25px;
+    }
+
+
+    /* ==================================================
+       MOBILE SLIDER
+    ================================================== */
+
+    .category-grid {
+        gap: 10px;
+    }
+
+
+    .category-card {
+
+        flex: 0 0 155px;
+        width: 155px;
+        height: 190px;
+    }
+
+
+    .category-content {
+        left: 11px;
+        right: 11px;
+        bottom: 11px;
+    }
+
+
+    .category-content h3 {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+
+    .category-content span {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media (max-width: 380px) {
+
+    .category-section {
+        padding: 35px 12px;
+    }
+
+
+    .category-heading h2 {
+        font-size: 23px;
+    }
+
+
+    .category-grid {
+        gap: 8px;
+    }
+
+
+    .category-card {
+
+        flex: 0 0 145px;
+        width: 145px;
+        height: 175px;
+    }
+
+
+    .category-content {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+    }
+
+
+    .category-content h3 {
+        font-size: 14px;
+    }
+
+}

@@ -1,0 +1,1106 @@
+/* ========================================
+   ASTRIKE SPORTS
+   BEST SELLERS
+======================================== */
+
+
+/* ========================================
+   SECTION
+======================================== */
+
+.best-seller-section {
+
+    width: 100%;
+
+    padding:
+        55px
+        4.5%
+        65px;
+
+    box-sizing: border-box;
+
+    background: #fff;
+
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.best-seller-header {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 28px;
+
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.best-seller-title {
+
+    min-width: 0;
+
+}
+
+
+.section-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 11px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 2.3px;
+
+    color: #777;
+
+    text-transform: uppercase;
+
+}
+
+
+.best-seller-title h2 {
+
+    margin: 0;
+
+    font-size: 34px;
+
+    line-height: 1.15;
+
+    font-weight: 750;
+
+    letter-spacing: -0.7px;
+
+    color: #111;
+
+}
+
+
+/* ========================================
+   VIEW ALL
+======================================== */
+
+.view-all {
+
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 40px;
+
+    padding: 0 4px;
+
+    color: #111;
+
+    font-size: 13px;
+
+    font-weight: 650;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.view-all:hover {
+
+    opacity: 0.6;
+
+    transform:
+        translateX(3px);
+
+}
+
+
+/* ========================================
+   SLIDER WRAPPER
+======================================== */
+
+.best-seller-slider-wrapper {
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+/* ========================================
+   SLIDER
+======================================== */
+
+.best-seller-slider {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-auto-flow: column;
+
+    grid-auto-columns:
+        calc(
+            (100% - 72px) / 5
+        );
+
+    gap: 18px;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+
+    padding:
+        4px
+        4px
+        12px;
+
+    box-sizing: border-box;
+
+}
+
+
+.best-seller-slider::-webkit-scrollbar {
+
+    display: none;
+
+}
+
+
+/* ========================================
+   PRODUCT CARD
+======================================== */
+
+.best-seller-card {
+
+    width: 100%;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    border-radius: 0;
+
+    cursor: pointer;
+
+    scroll-snap-align: start;
+
+    transition:
+        transform 0.3s ease;
+
+}
+
+
+/* ========================================
+   CARD HOVER
+======================================== */
+
+.best-seller-card:hover {
+
+    transform:
+        translateY(-5px);
+
+}
+
+
+/* ========================================
+   PRODUCT IMAGE
+======================================== */
+
+.best-seller-image {
+
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio:
+        1 / 1.22;
+
+    overflow: hidden;
+
+    background: #f4f4f4;
+
+    border-radius: 0;
+
+    text-decoration: none;
+
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.best-seller-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.55s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        );
+
+}
+
+
+/* ========================================
+   IMAGE HOVER
+======================================== */
+
+.best-seller-card:hover
+.best-seller-image img {
+
+    transform:
+        scale(1.055);
+
+}
+
+
+/* ========================================
+   PRODUCT INFO
+======================================== */
+
+.best-seller-info {
+
+    width: 100%;
+
+    padding:
+        13px
+        2px
+        5px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* ========================================
+   PRODUCT NAME
+   ONE LINE
+   EXTRA = ...
+======================================== */
+
+.best-seller-info h3 {
+
+    width: 100%;
+
+    display: block;
+
+    margin:
+        0
+        0
+        7px;
+
+    padding: 0;
+
+    font-size: 14px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    letter-spacing: -0.1px;
+
+    color: #171717;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+
+/* ========================================
+   PRICE
+======================================== */
+
+.best-seller-info .product-price {
+
+    width: 100%;
+
+    min-height: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+.best-seller-info
+.product-price strong {
+
+    font-size: 16px;
+
+    line-height: 1.2;
+
+    font-weight: 750;
+
+    letter-spacing: -0.2px;
+
+    color: #111;
+
+}
+
+
+/* ========================================
+   HIDE EXTRA INFORMATION
+======================================== */
+
+.best-seller-card .product-brand,
+.best-seller-card .product-rating,
+.best-seller-card .old-price,
+.best-seller-card .discount,
+.best-seller-card .discount-badge,
+.best-seller-card del {
+
+    display: none !important;
+
+}
+
+
+/* ========================================
+   SLIDER BUTTONS
+======================================== */
+
+.slider-btn {
+
+    position: absolute;
+
+    z-index: 10;
+
+    top: 50%;
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 50%;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.96
+        );
+
+    color: #111;
+
+    font-size: 19px;
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 18px
+        rgba(
+            0,
+            0,
+            0,
+            0.12
+        );
+
+    transform:
+        translateY(-50%);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease,
+        opacity 0.2s ease;
+
+}
+
+
+/* ========================================
+   PREVIOUS
+======================================== */
+
+.best-seller-prev {
+
+    left: -22px;
+
+}
+
+
+/* ========================================
+   NEXT
+======================================== */
+
+.best-seller-next {
+
+    right: -22px;
+
+}
+
+
+/* ========================================
+   BUTTON HOVER
+======================================== */
+
+.slider-btn:hover:not(:disabled) {
+
+    background: #111;
+
+    color: #fff;
+
+    border-color: #111;
+
+    transform:
+        translateY(-50%)
+        scale(1.05);
+
+}
+
+
+/* ========================================
+   DISABLED
+======================================== */
+
+.slider-btn:disabled {
+
+    cursor: default;
+
+    opacity: 0.45;
+
+    box-shadow: none;
+
+}
+
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.best-seller-empty {
+
+    width: 100%;
+
+    padding:
+        70px
+        20px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+}
+
+
+.best-seller-empty
+.section-label {
+
+    margin-bottom: 10px;
+
+}
+
+
+.best-seller-empty h2 {
+
+    margin:
+        0
+        0
+        10px;
+
+    font-size: 28px;
+
+    color: #111;
+
+}
+
+
+.best-seller-empty p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #777;
+
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+   1400px+
+======================================== */
+
+@media (min-width: 1400px) {
+
+    .best-seller-section {
+
+        padding-left: 4%;
+
+        padding-right: 4%;
+
+    }
+
+
+    .best-seller-slider {
+
+        grid-auto-columns:
+            calc(
+                (100% - 80px) / 5
+            );
+
+        gap: 20px;
+
+    }
+
+
+    .best-seller-info h3 {
+
+        font-size: 15px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+    }
+
+
+    .best-seller-info
+    .product-price strong {
+
+        font-size: 17px;
+
+    }
+
+}
+
+
+/* ========================================
+   TABLET / LAPTOP
+   <= 1100px
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .best-seller-section {
+
+        padding:
+            45px
+            4%
+            55px;
+
+    }
+
+
+    .best-seller-title h2 {
+
+        font-size: 31px;
+
+    }
+
+
+    .best-seller-slider {
+
+        grid-auto-columns:
+            calc(
+                (100% - 36px) / 3
+            );
+
+        gap: 18px;
+
+    }
+
+
+    .best-seller-image {
+
+        aspect-ratio:
+            1 / 1.2;
+
+    }
+
+
+    .slider-btn {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 17px;
+
+    }
+
+
+    .best-seller-prev {
+
+        left: -19px;
+
+    }
+
+
+    .best-seller-next {
+
+        right: -19px;
+
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+   <= 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+    .best-seller-section {
+
+        padding:
+            35px
+            14px
+            45px;
+
+    }
+
+
+    /* HEADER */
+
+    .best-seller-header {
+
+        align-items: flex-end;
+
+        margin-bottom: 22px;
+
+    }
+
+
+    /* LABEL */
+
+    .section-label {
+
+        margin-bottom: 7px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.8px;
+
+    }
+
+
+    /* TITLE */
+
+    .best-seller-title h2 {
+
+        font-size: 27px;
+
+        letter-spacing: -0.4px;
+
+    }
+
+
+    /* VIEW ALL */
+
+    .view-all {
+
+        font-size: 12px;
+
+        min-height: 34px;
+
+    }
+
+
+    /* SLIDER */
+
+    .best-seller-slider {
+
+        grid-auto-columns:
+            calc(
+                (100% - 12px) / 2
+            );
+
+        gap: 12px;
+
+        padding:
+            3px
+            3px
+            10px;
+
+    }
+
+
+    /* IMAGE */
+
+    .best-seller-image {
+
+        aspect-ratio:
+            1 / 1.2;
+
+        border-radius: 0;
+
+    }
+
+
+    /* CARD */
+
+    .best-seller-card {
+
+        border-radius: 0;
+
+    }
+
+
+    /* INFO */
+
+    .best-seller-info {
+
+        padding:
+            10px
+            1px
+            3px;
+
+    }
+
+
+    /* NAME */
+
+    .best-seller-info h3 {
+
+        width: 100%;
+
+        font-size: 13px;
+
+        line-height: 1.35;
+
+        margin:
+            0
+            0
+            5px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+    }
+
+
+    /* PRICE */
+
+    .best-seller-info
+    .product-price strong {
+
+        font-size: 15px;
+
+    }
+
+
+    /* BUTTON */
+
+    .slider-btn {
+
+        width: 36px;
+
+        height: 36px;
+
+        font-size: 15px;
+
+    }
+
+
+    .best-seller-prev {
+
+        left: -8px;
+
+    }
+
+
+    .best-seller-next {
+
+        right: -8px;
+
+    }
+
+
+    /* MOBILE HOVER */
+
+    .best-seller-card:hover {
+
+        transform: none;
+
+    }
+
+
+    .best-seller-card:hover
+    .best-seller-image img {
+
+        transform: none;
+
+    }
+
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   <= 420px
+======================================== */
+
+@media (max-width: 420px) {
+
+    .best-seller-section {
+
+        padding:
+            30px
+            10px
+            40px;
+
+    }
+
+
+    .best-seller-title h2 {
+
+        font-size: 24px;
+
+    }
+
+
+    .view-all {
+
+        font-size: 11px;
+
+    }
+
+
+    .best-seller-slider {
+
+        grid-auto-columns:
+            calc(
+                (100% - 10px) / 2
+            );
+
+        gap: 10px;
+
+    }
+
+
+    /* IMAGE */
+
+    .best-seller-image {
+
+        aspect-ratio:
+            1 / 1.18;
+
+        border-radius: 0;
+
+    }
+
+
+    /* CARD */
+
+    .best-seller-card {
+
+        border-radius: 0;
+
+    }
+
+
+    /* INFO */
+
+    .best-seller-info {
+
+        padding-top: 9px;
+
+    }
+
+
+    /* PRODUCT NAME */
+
+    .best-seller-info h3 {
+
+        width: 100%;
+
+        font-size: 12px;
+
+        margin:
+            0
+            0
+            5px;
+
+        line-height: 1.35;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+    }
+
+
+    /* PRICE */
+
+    .best-seller-info
+    .product-price strong {
+
+        font-size: 14px;
+
+    }
+
+
+    /* BUTTON */
+
+    .slider-btn {
+
+        width: 32px;
+
+        height: 32px;
+
+        font-size: 13px;
+
+    }
+
+
+    .best-seller-prev {
+
+        left: -5px;
+
+    }
+
+
+    .best-seller-next {
+
+        right: -5px;
+
+    }
+
+}
+
+
+/* ========================================
+   VERY SMALL MOBILE
+   <= 360px
+======================================== */
+
+@media (max-width: 360px) {
+
+    .best-seller-section {
+
+        padding-left: 8px;
+
+        padding-right: 8px;
+
+    }
+
+
+    .best-seller-title h2 {
+
+        font-size: 22px;
+
+    }
+
+
+    .best-seller-slider {
+
+        gap: 8px;
+
+        grid-auto-columns:
+            calc(
+                (100% - 8px) / 2
+            );
+
+    }
+
+
+    .best-seller-info h3 {
+
+        width: 100%;
+
+        font-size: 11.5px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+    }
+
+
+    .best-seller-info
+    .product-price strong {
+
+        font-size: 13px;
+
+    }
+
+}

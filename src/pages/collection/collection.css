@@ -1,0 +1,1053 @@
+/* ========================================
+   ASTRIKE SPORTS
+   COLLECTION PAGE
+======================================== */
+
+
+/* ========================================
+   SECTION
+======================================== */
+
+.collection-section {
+
+    width: 100%;
+
+    padding:
+        55px
+        4.5%
+        65px;
+
+    box-sizing: border-box;
+
+    background: #fff;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.collection-header {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+
+/* ========================================
+   SECTION LABEL
+======================================== */
+
+.collection-header .section-label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 10px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 2.2px;
+
+    color: #777;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.collection-header h1 {
+
+    margin: 0;
+
+    font-size: 30px;
+
+    line-height: 1.15;
+
+    font-weight: 750;
+
+    letter-spacing: -0.5px;
+
+    color: #111;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   PRODUCT COUNT
+======================================== */
+
+.collection-header p {
+
+    margin:
+        8px
+        0
+        0;
+
+    font-size: 11px;
+
+    line-height: 1.3;
+
+    color: #777;
+}
+
+
+/* ========================================
+   FILTER + PRODUCTS
+======================================== */
+
+.collection-products-section {
+
+    width: 100%;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   PRODUCT GRID
+======================================== */
+
+.collection-grid {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(0, 1fr));
+
+    gap:
+        32px
+        18px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   PRODUCT CARD
+======================================== */
+
+.collection-card {
+
+    width: 100%;
+
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #fff;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* ========================================
+   CARD HOVER
+======================================== */
+
+.collection-card:hover {
+
+    transform:
+        translateY(-4px);
+}
+
+
+/* ========================================
+   PRODUCT IMAGE
+======================================== */
+
+.collection-image {
+
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+
+    aspect-ratio:
+        1 / 1.22;
+
+    overflow: hidden;
+
+    background: #f4f4f4;
+
+    text-decoration: none;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.collection-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+        transform
+        0.55s
+        cubic-bezier(
+            0.2,
+            0.7,
+            0.2,
+            1
+        );
+}
+
+
+/* ========================================
+   IMAGE HOVER
+======================================== */
+
+.collection-card:hover
+.collection-image img {
+
+    transform:
+        scale(1.055);
+}
+
+
+/* ========================================
+   DISCOUNT BADGE
+======================================== */
+
+.collection-image .discount-badge {
+
+    position: absolute;
+
+    top: 9px;
+
+    left: 9px;
+
+    z-index: 2;
+
+    padding:
+        5px
+        7px;
+
+    background: #111;
+
+    color: #fff;
+
+    font-size: 9px;
+
+    line-height: 1;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2px;
+}
+
+
+/* ========================================
+   PRODUCT INFO
+======================================== */
+
+.collection-info {
+
+    width: 100%;
+
+    padding:
+        10px
+        1px
+        4px;
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.collection-info > p {
+
+    width: 100%;
+
+    margin:
+        0
+        0
+        4px;
+
+    padding: 0;
+
+    color: #777;
+
+    font-size: 8.5px;
+
+    line-height: 1.2;
+
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ========================================
+   PRODUCT NAME
+   ONLY ONE LINE
+   EXTRA TEXT = ...
+======================================== */
+
+.collection-info h3 {
+
+    width: 100%;
+
+    display: block;
+
+    margin:
+        0
+        0
+        5px;
+
+    padding: 0;
+
+    color: #171717;
+
+    font-size: 12.5px;
+
+    line-height: 1.35;
+
+    font-weight: 600;
+
+    letter-spacing: -0.1px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/* ========================================
+   RATING
+======================================== */
+
+.collection-rating {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 2px;
+
+    margin:
+        0
+        0
+        5px;
+
+    padding: 0;
+
+    color: #555;
+
+    font-size: 10px;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
+}
+
+
+/* STAR */
+
+.collection-rating > span:first-child {
+
+    color: #777;
+
+    font-size: 10px;
+}
+
+
+/* REVIEW COUNT */
+
+.collection-rating > span:last-child {
+
+    color: #999;
+
+    font-size: 9px;
+}
+
+
+/* ========================================
+   PRICE
+======================================== */
+
+.collection-price {
+
+    width: 100%;
+
+    min-height: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin: 0;
+
+    padding: 0;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+}
+
+
+/* CURRENT PRICE */
+
+.collection-price strong {
+
+    font-size: 14px;
+
+    line-height: 1.2;
+
+    font-weight: 750;
+
+    letter-spacing: -0.2px;
+
+    color: #111;
+}
+
+
+/* OLD PRICE */
+
+.collection-price del {
+
+    font-size: 10px;
+
+    line-height: 1.2;
+
+    color: #999;
+}
+
+
+/* DISCOUNT */
+
+.collection-price .collection-discount {
+
+    font-size: 9px;
+
+    line-height: 1.2;
+
+    color: #666;
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   NO PRODUCTS
+======================================== */
+
+.collection-no-products {
+
+    width: 100%;
+
+    grid-column: 1 / -1;
+
+    padding:
+        65px
+        20px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.collection-no-products-icon {
+
+    margin-bottom: 12px;
+
+    font-size: 30px;
+}
+
+
+/* TITLE */
+
+.collection-no-products h2 {
+
+    margin:
+        0
+        0
+        8px;
+
+    font-size: 22px;
+
+    line-height: 1.2;
+
+    color: #111;
+}
+
+
+/* TEXT */
+
+.collection-no-products p {
+
+    margin:
+        0
+        0
+        18px;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+/* RESET BUTTON */
+
+.collection-reset-btn {
+
+    padding:
+        10px
+        18px;
+
+    border: 1px solid #111;
+
+    background: #111;
+
+    color: #fff;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.collection-reset-btn:hover {
+
+    background: #fff;
+
+    color: #111;
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+   1400px+
+======================================== */
+
+@media (min-width: 1400px) {
+
+    .collection-section {
+
+        padding-left: 4%;
+
+        padding-right: 4%;
+    }
+
+
+    .collection-grid {
+
+        grid-template-columns:
+            repeat(5, minmax(0, 1fr));
+
+        gap:
+            34px
+            20px;
+    }
+
+
+    .collection-info h3 {
+
+        font-size: 13px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .collection-price strong {
+
+        font-size: 15px;
+    }
+}
+
+
+/* ========================================
+   TABLET / LAPTOP
+   <= 1100px
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .collection-section {
+
+        padding:
+            45px
+            4%
+            55px;
+    }
+
+
+    .collection-header h1 {
+
+        font-size: 27px;
+    }
+
+
+    .collection-grid {
+
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+
+        gap:
+            28px
+            16px;
+    }
+
+
+    .collection-image {
+
+        aspect-ratio:
+            1 / 1.2;
+    }
+
+
+    .collection-info h3 {
+
+        font-size: 12px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .collection-price strong {
+
+        font-size: 14px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+   <= 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+    .collection-section {
+
+        padding:
+            35px
+            14px
+            45px;
+    }
+
+
+    /* HEADER */
+
+    .collection-header {
+
+        margin-bottom: 22px;
+    }
+
+
+    /* LABEL */
+
+    .collection-header .section-label {
+
+        margin-bottom: 7px;
+
+        font-size: 8.5px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    /* TITLE */
+
+    .collection-header h1 {
+
+        font-size: 24px;
+
+        letter-spacing: -0.4px;
+    }
+
+
+    /* COUNT */
+
+    .collection-header p {
+
+        margin-top: 7px;
+
+        font-size: 10px;
+    }
+
+
+    /* GRID */
+
+    .collection-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap:
+            25px
+            12px;
+    }
+
+
+    /* IMAGE */
+
+    .collection-image {
+
+        aspect-ratio:
+            1 / 1.2;
+    }
+
+
+    /* INFO */
+
+    .collection-info {
+
+        padding:
+            9px
+            1px
+            3px;
+    }
+
+
+    /* BRAND */
+
+    .collection-info > p {
+
+        font-size: 7.5px;
+
+        margin-bottom: 3px;
+    }
+
+
+    /* PRODUCT NAME */
+
+    .collection-info h3 {
+
+        width: 100%;
+
+        font-size: 11.5px;
+
+        line-height: 1.35;
+
+        margin:
+            0
+            0
+            5px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* RATING */
+
+    .collection-rating {
+
+        font-size: 9px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .collection-rating > span:first-child {
+
+        font-size: 9px;
+    }
+
+
+    .collection-rating > span:last-child {
+
+        font-size: 8px;
+    }
+
+
+    /* PRICE */
+
+    .collection-price {
+
+        gap: 5px;
+    }
+
+
+    .collection-price strong {
+
+        font-size: 13px;
+    }
+
+
+    .collection-price del {
+
+        font-size: 9px;
+    }
+
+
+    .collection-price .collection-discount {
+
+        font-size: 8px;
+    }
+
+
+    /* DISCOUNT */
+
+    .collection-image .discount-badge {
+
+        top: 7px;
+
+        left: 7px;
+
+        padding:
+            4px
+            6px;
+
+        font-size: 8px;
+    }
+
+
+    /* MOBILE HOVER */
+
+    .collection-card:hover {
+
+        transform: none;
+    }
+
+
+    .collection-card:hover
+    .collection-image img {
+
+        transform: none;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   <= 420px
+======================================== */
+
+@media (max-width: 420px) {
+
+    .collection-section {
+
+        padding:
+            30px
+            10px
+            40px;
+    }
+
+
+    .collection-header h1 {
+
+        font-size: 22px;
+    }
+
+
+    .collection-grid {
+
+        gap:
+            22px
+            10px;
+    }
+
+
+    /* IMAGE */
+
+    .collection-image {
+
+        aspect-ratio:
+            1 / 1.18;
+    }
+
+
+    /* INFO */
+
+    .collection-info {
+
+        padding-top: 8px;
+    }
+
+
+    /* BRAND */
+
+    .collection-info > p {
+
+        font-size: 7px;
+    }
+
+
+    /* PRODUCT NAME */
+
+    .collection-info h3 {
+
+        width: 100%;
+
+        font-size: 10.5px;
+
+        margin:
+            0
+            0
+            4px;
+
+        line-height: 1.35;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    /* RATING */
+
+    .collection-rating {
+
+        font-size: 8.5px;
+
+        margin-bottom: 4px;
+    }
+
+
+    .collection-rating > span:first-child {
+
+        font-size: 8.5px;
+    }
+
+
+    .collection-rating > span:last-child {
+
+        font-size: 7.5px;
+    }
+
+
+    /* PRICE */
+
+    .collection-price strong {
+
+        font-size: 12px;
+    }
+
+
+    .collection-price del {
+
+        font-size: 8.5px;
+    }
+
+
+    .collection-price .collection-discount {
+
+        font-size: 7.5px;
+    }
+}
+
+
+/* ========================================
+   VERY SMALL MOBILE
+   <= 360px
+======================================== */
+
+@media (max-width: 360px) {
+
+    .collection-section {
+
+        padding-left: 8px;
+
+        padding-right: 8px;
+    }
+
+
+    .collection-header h1 {
+
+        font-size: 20px;
+    }
+
+
+    .collection-grid {
+
+        gap:
+            20px
+            8px;
+    }
+
+
+    .collection-info h3 {
+
+        width: 100%;
+
+        font-size: 10px;
+
+        white-space: nowrap;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+    }
+
+
+    .collection-price strong {
+
+        font-size: 11.5px;
+    }
+
+
+    .collection-price del {
+
+        font-size: 8px;
+    }
+
+
+    .collection-rating {
+
+        font-size: 8px;
+    }
+}
